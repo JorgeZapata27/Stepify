@@ -37,7 +37,15 @@ class Sign_Up: UIViewController, UITextFieldDelegate, ASAuthorizationControllerP
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
         super.viewWillAppear(animated)
+        
+        if Auth.auth().currentUser != nil {
+            // advance to next screen
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let vc: UIViewController = sb.instantiateViewController(withIdentifier: "TabBarMain") as! MainTabBarController
+            UIApplication.shared.keyWindow?.rootViewController = vc
+        }
         
         GIDSignIn.sharedInstance()?.presentingViewController = self
         GIDSignIn.sharedInstance()?.delegate = self
@@ -157,9 +165,8 @@ class Sign_Up: UIViewController, UITextFieldDelegate, ASAuthorizationControllerP
     }
     
     func hello() {
-        let key = Database.database().reference().child("Users").childByAutoId().key
         let friends = ["uid" : "\(Auth.auth().currentUser!.uid)"] as [String : Any]
-        let totalList = ["\(key!)" : friends]
+        let totalList = ["\(Auth.auth().currentUser!.uid)" : friends]
         Database.database().reference().child("Users").child(Auth.auth().currentUser!.uid).child("Friends").updateChildValues(totalList)
     }
     

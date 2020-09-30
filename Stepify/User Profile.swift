@@ -111,9 +111,8 @@ class User_Profile: UIViewController, GADBannerViewDelegate {
                                 // alert of success
                             } else {
                                 print("USER WILL BE ADDED")
-                                let key = Database.database().reference().child("Users").childByAutoId().key
                                 let friends = ["uid" : "\(self.uid)"] as [String : Any]
-                                let totalList = ["\(key!)" : friends]
+                                let totalList = ["\(self.uid)" : friends]
                                 Database.database().reference().child("Users").child(Auth.auth().currentUser!.uid).child("Friends").updateChildValues(totalList)
                                 // alert of success
                             }
