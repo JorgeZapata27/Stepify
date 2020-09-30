@@ -3,27 +3,74 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78076F58251FBEB7008143E2 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78076F57251FBEB7008143E2 /* Map.swift */; };
 		78173736251BCB1B0062FFA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78173735251BCB1B0062FFA2 /* AppDelegate.swift */; };
 		78173738251BCB1B0062FFA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78173737251BCB1B0062FFA2 /* SceneDelegate.swift */; };
-		7817373A251BCB1B0062FFA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78173739251BCB1B0062FFA2 /* ViewController.swift */; };
+		7817373A251BCB1B0062FFA2 /* NavControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78173739251BCB1B0062FFA2 /* NavControllerView.swift */; };
 		7817373D251BCB1B0062FFA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7817373B251BCB1B0062FFA2 /* Main.storyboard */; };
 		7817373F251BCB240062FFA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7817373E251BCB240062FFA2 /* Assets.xcassets */; };
 		78173742251BCB240062FFA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78173740251BCB240062FFA2 /* LaunchScreen.storyboard */; };
+		7817374A251C6B500062FFA2 /* Onboarding1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78173749251C6B500062FFA2 /* Onboarding1.swift */; };
+		7817374C251C6B600062FFA2 /* Onboarding2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7817374B251C6B600062FFA2 /* Onboarding2.swift */; };
+		7817374E251C6B6B0062FFA2 /* Onboarding3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7817374D251C6B6B0062FFA2 /* Onboarding3.swift */; };
+		78173752251C6C1C0062FFA2 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78173751251C6C1C0062FFA2 /* HealthKit.framework */; };
+		78173754251CE64E0062FFA2 /* Sign In.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78173753251CE64E0062FFA2 /* Sign In.swift */; };
+		78173756251CE82E0062FFA2 /* Sign Up.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78173755251CE82E0062FFA2 /* Sign Up.swift */; };
+		7817375A251E5D4D0062FFA2 /* Add Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78173759251E5D4D0062FFA2 /* Add Photo.swift */; };
+		7817375C251F26F40062FFA2 /* Forgot Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7817375B251F26F40062FFA2 /* Forgot Password.swift */; };
+		7817375E251F2A400062FFA2 /* Forgot Password Success.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7817375D251F2A400062FFA2 /* Forgot Password Success.swift */; };
+		78173760251F2B420062FFA2 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7817375F251F2B420062FFA2 /* MainTabBarController.swift */; };
+		78173762251F2F870062FFA2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78173761251F2F870062FFA2 /* GoogleService-Info.plist */; };
+		78173764251F31B70062FFA2 /* Sign In Nav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78173763251F31B70062FFA2 /* Sign In Nav.swift */; };
+		78173766251F31C30062FFA2 /* Sign Up Nav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78173765251F31C30062FFA2 /* Sign Up Nav.swift */; };
+		78173768251F4AF70062FFA2 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78173767251F4AF70062FFA2 /* Home.swift */; };
+		78418DDD25206F9D0052125F /* Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78418DDC25206F9D0052125F /* Leaderboard.swift */; };
+		78418DDF252073650052125F /* Leaderboard Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78418DDE252073650052125F /* Leaderboard Cell.swift */; };
+		78418DE1252074520052125F /* Leaderboard User Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78418DE0252074520052125F /* Leaderboard User Object.swift */; };
+		78418DE3252081160052125F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78418DE2252081160052125F /* Extensions.swift */; };
+		78418DE525208E9C0052125F /* Leaderboard Friend Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78418DE425208E9C0052125F /* Leaderboard Friend Object.swift */; };
+		78FC3CC92523B09C00AD6963 /* User Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC3CC82523B09C00AD6963 /* User Profile.swift */; };
+		9A9EC3F9CD90947833E33C39 /* Pods_Stepify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE93648E00CD0B893D6E0B9 /* Pods_Stepify.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FA27F8EB0BBA5A5D7569039 /* Pods-Stepify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stepify.debug.xcconfig"; path = "Target Support Files/Pods-Stepify/Pods-Stepify.debug.xcconfig"; sourceTree = "<group>"; };
+		6AE93648E00CD0B893D6E0B9 /* Pods_Stepify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stepify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78076F57251FBEB7008143E2 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		78173732251BCB1B0062FFA2 /* Stepify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stepify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78173735251BCB1B0062FFA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78173737251BCB1B0062FFA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		78173739251BCB1B0062FFA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		78173739251BCB1B0062FFA2 /* NavControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavControllerView.swift; sourceTree = "<group>"; };
 		7817373C251BCB1B0062FFA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7817373E251BCB240062FFA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78173741251BCB240062FFA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78173743251BCB240062FFA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78173749251C6B500062FFA2 /* Onboarding1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding1.swift; sourceTree = "<group>"; };
+		7817374B251C6B600062FFA2 /* Onboarding2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding2.swift; sourceTree = "<group>"; };
+		7817374D251C6B6B0062FFA2 /* Onboarding3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding3.swift; sourceTree = "<group>"; };
+		7817374F251C6C1C0062FFA2 /* Stepify.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Stepify.entitlements; sourceTree = "<group>"; };
+		78173751251C6C1C0062FFA2 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		78173753251CE64E0062FFA2 /* Sign In.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sign In.swift"; sourceTree = "<group>"; };
+		78173755251CE82E0062FFA2 /* Sign Up.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sign Up.swift"; sourceTree = "<group>"; };
+		78173759251E5D4D0062FFA2 /* Add Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Add Photo.swift"; sourceTree = "<group>"; };
+		7817375B251F26F40062FFA2 /* Forgot Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Forgot Password.swift"; sourceTree = "<group>"; };
+		7817375D251F2A400062FFA2 /* Forgot Password Success.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Forgot Password Success.swift"; sourceTree = "<group>"; };
+		7817375F251F2B420062FFA2 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		78173761251F2F870062FFA2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		78173763251F31B70062FFA2 /* Sign In Nav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sign In Nav.swift"; sourceTree = "<group>"; };
+		78173765251F31C30062FFA2 /* Sign Up Nav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sign Up Nav.swift"; sourceTree = "<group>"; };
+		78173767251F4AF70062FFA2 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		78418DDC25206F9D0052125F /* Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboard.swift; sourceTree = "<group>"; };
+		78418DDE252073650052125F /* Leaderboard Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Leaderboard Cell.swift"; sourceTree = "<group>"; };
+		78418DE0252074520052125F /* Leaderboard User Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Leaderboard User Object.swift"; sourceTree = "<group>"; };
+		78418DE2252081160052125F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		78418DE425208E9C0052125F /* Leaderboard Friend Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Leaderboard Friend Object.swift"; sourceTree = "<group>"; };
+		78FC3CC82523B09C00AD6963 /* User Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User Profile.swift"; sourceTree = "<group>"; };
+		A313009FC01BFBE5EC8E1C6C /* Pods-Stepify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stepify.release.xcconfig"; path = "Target Support Files/Pods-Stepify/Pods-Stepify.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78173752251C6C1C0062FFA2 /* HealthKit.framework in Frameworks */,
+				9A9EC3F9CD90947833E33C39 /* Pods_Stepify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +91,8 @@
 			children = (
 				78173734251BCB1B0062FFA2 /* Stepify */,
 				78173733251BCB1B0062FFA2 /* Products */,
+				78173750251C6C1C0062FFA2 /* Frameworks */,
+				B7C78E45977CAC2D99F504E5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +107,54 @@
 		78173734251BCB1B0062FFA2 /* Stepify */ = {
 			isa = PBXGroup;
 			children = (
+				7817374F251C6C1C0062FFA2 /* Stepify.entitlements */,
 				78173735251BCB1B0062FFA2 /* AppDelegate.swift */,
 				78173737251BCB1B0062FFA2 /* SceneDelegate.swift */,
-				78173739251BCB1B0062FFA2 /* ViewController.swift */,
+				78418DE2252081160052125F /* Extensions.swift */,
+				78173739251BCB1B0062FFA2 /* NavControllerView.swift */,
+				78173749251C6B500062FFA2 /* Onboarding1.swift */,
+				7817374B251C6B600062FFA2 /* Onboarding2.swift */,
+				7817374D251C6B6B0062FFA2 /* Onboarding3.swift */,
+				78173763251F31B70062FFA2 /* Sign In Nav.swift */,
+				78173765251F31C30062FFA2 /* Sign Up Nav.swift */,
+				78173753251CE64E0062FFA2 /* Sign In.swift */,
+				78173755251CE82E0062FFA2 /* Sign Up.swift */,
+				78173759251E5D4D0062FFA2 /* Add Photo.swift */,
+				7817375B251F26F40062FFA2 /* Forgot Password.swift */,
+				7817375D251F2A400062FFA2 /* Forgot Password Success.swift */,
+				7817375F251F2B420062FFA2 /* MainTabBarController.swift */,
+				78173767251F4AF70062FFA2 /* Home.swift */,
+				78076F57251FBEB7008143E2 /* Map.swift */,
+				78418DDC25206F9D0052125F /* Leaderboard.swift */,
+				78418DDE252073650052125F /* Leaderboard Cell.swift */,
+				78418DE0252074520052125F /* Leaderboard User Object.swift */,
+				78418DE425208E9C0052125F /* Leaderboard Friend Object.swift */,
+				78FC3CC82523B09C00AD6963 /* User Profile.swift */,
 				7817373B251BCB1B0062FFA2 /* Main.storyboard */,
 				7817373E251BCB240062FFA2 /* Assets.xcassets */,
 				78173740251BCB240062FFA2 /* LaunchScreen.storyboard */,
 				78173743251BCB240062FFA2 /* Info.plist */,
+				78173761251F2F870062FFA2 /* GoogleService-Info.plist */,
 			);
 			path = Stepify;
+			sourceTree = "<group>";
+		};
+		78173750251C6C1C0062FFA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78173751251C6C1C0062FFA2 /* HealthKit.framework */,
+				6AE93648E00CD0B893D6E0B9 /* Pods_Stepify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7C78E45977CAC2D99F504E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2FA27F8EB0BBA5A5D7569039 /* Pods-Stepify.debug.xcconfig */,
+				A313009FC01BFBE5EC8E1C6C /* Pods-Stepify.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78173746251BCB240062FFA2 /* Build configuration list for PBXNativeTarget "Stepify" */;
 			buildPhases = (
+				E95ECA8237F17D91A4B20409 /* [CP] Check Pods Manifest.lock */,
 				7817372E251BCB1B0062FFA2 /* Sources */,
 				7817372F251BCB1B0062FFA2 /* Frameworks */,
 				78173730251BCB1B0062FFA2 /* Resources */,
+				11DF465507777DB3BA2E5317 /* [CP] Embed Pods Frameworks */,
+				73C99128ED8B4D6653828330 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78173742251BCB240062FFA2 /* LaunchScreen.storyboard in Resources */,
+				78173762251F2F870062FFA2 /* GoogleService-Info.plist in Resources */,
 				7817373F251BCB240062FFA2 /* Assets.xcassets in Resources */,
 				7817373D251BCB1B0062FFA2 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +227,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11DF465507777DB3BA2E5317 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stepify/Pods-Stepify-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stepify/Pods-Stepify-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Stepify/Pods-Stepify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73C99128ED8B4D6653828330 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stepify/Pods-Stepify-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stepify/Pods-Stepify-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Stepify/Pods-Stepify-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E95ECA8237F17D91A4B20409 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stepify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7817372E251BCB1B0062FFA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7817373A251BCB1B0062FFA2 /* ViewController.swift in Sources */,
+				78418DE1252074520052125F /* Leaderboard User Object.swift in Sources */,
+				78418DDF252073650052125F /* Leaderboard Cell.swift in Sources */,
+				7817374E251C6B6B0062FFA2 /* Onboarding3.swift in Sources */,
+				7817375A251E5D4D0062FFA2 /* Add Photo.swift in Sources */,
+				78418DE525208E9C0052125F /* Leaderboard Friend Object.swift in Sources */,
+				78FC3CC92523B09C00AD6963 /* User Profile.swift in Sources */,
+				78076F58251FBEB7008143E2 /* Map.swift in Sources */,
+				78173764251F31B70062FFA2 /* Sign In Nav.swift in Sources */,
+				78173760251F2B420062FFA2 /* MainTabBarController.swift in Sources */,
+				7817375C251F26F40062FFA2 /* Forgot Password.swift in Sources */,
+				78173766251F31C30062FFA2 /* Sign Up Nav.swift in Sources */,
+				7817374A251C6B500062FFA2 /* Onboarding1.swift in Sources */,
+				78173768251F4AF70062FFA2 /* Home.swift in Sources */,
+				7817373A251BCB1B0062FFA2 /* NavControllerView.swift in Sources */,
+				7817374C251C6B600062FFA2 /* Onboarding2.swift in Sources */,
+				78418DDD25206F9D0052125F /* Leaderboard.swift in Sources */,
 				78173736251BCB1B0062FFA2 /* AppDelegate.swift in Sources */,
+				78418DE3252081160052125F /* Extensions.swift in Sources */,
 				78173738251BCB1B0062FFA2 /* SceneDelegate.swift in Sources */,
+				78173756251CE82E0062FFA2 /* Sign Up.swift in Sources */,
+				7817375E251F2A400062FFA2 /* Forgot Password Success.swift in Sources */,
+				78173754251CE64E0062FFA2 /* Sign In.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +454,10 @@
 		};
 		78173747251BCB240062FFA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FA27F8EB0BBA5A5D7569039 /* Pods-Stepify.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Stepify/Stepify.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZH735L9VC9;
 				INFOPLIST_FILE = Stepify/Info.plist;
@@ -300,8 +474,10 @@
 		};
 		78173748251BCB240062FFA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A313009FC01BFBE5EC8E1C6C /* Pods-Stepify.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Stepify/Stepify.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZH735L9VC9;
 				INFOPLIST_FILE = Stepify/Info.plist;
