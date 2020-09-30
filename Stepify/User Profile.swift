@@ -90,15 +90,31 @@ class User_Profile: UIViewController, GADBannerViewDelegate {
                                 print(user.profileImageUrl!)
                                 self.allFriends.append(user)
                             }
-                            if self.allFriends.contains(<#Leaderboard_User_Object#>) {
-                                // alert of success
+                            let currentUser = Leaderboard_User_Object()
+                            currentUser.uid = self.uid
+                            currentUser.name = self.nameOfUser
+                            currentUser.steps = self.stepCount
+                            currentUser.email = self.emailAddress
+                            currentUser.profileImageUrl = self.imageURL
+                            print("currentUser")
+                            print(currentUser)
+                            print(currentUser.uid!)
+                            print("currentUser")
+                            print("Array User")
+                            for friend in self.allFriends {
+                                print(friend.uid!)
+                            }
+                            print("Array User")
+                            if self.allFriends.contains(where: { $0.uid == self.uid }) {
+                                print("USER WILL BE REMOVED")
                                 Database.database().reference().child("Users").child(Auth.auth().currentUser!.uid).child("Friends").child(self.uid).removeValue()
+                                // alert of success
                             } else {
+                                print("USER WILL BE ADDED")
                                 let key = Database.database().reference().child("Users").childByAutoId().key
                                 let friends = ["uid" : "\(self.uid)"] as [String : Any]
                                 let totalList = ["\(key!)" : friends]
                                 Database.database().reference().child("Users").child(Auth.auth().currentUser!.uid).child("Friends").updateChildValues(totalList)
-                                
                                 // alert of success
                             }
                         }
@@ -108,10 +124,10 @@ class User_Profile: UIViewController, GADBannerViewDelegate {
         // if list contains, do nothing
         // else, add
         
-        let key = Database.database().reference().child("Users").childByAutoId().key
-        let friends = ["uid" : "\(Auth.auth().currentUser!.uid)"] as [String : Any]
-        let totalList = ["\(key!)" : friends]
-        Database.database().reference().child("Users").child(Auth.auth().currentUser!.uid).child("Friends").updateChildValues(totalList)
+//        let key = Database.database().reference().child("Users").childByAutoId().key
+//        let friends = ["uid" : "\(Auth.auth().currentUser!.uid)"] as [String : Any]
+//        let totalList = ["\(key!)" : friends]
+//        Database.database().reference().child("Users").child(Auth.auth().currentUser!.uid).child("Friends").updateChildValues(totalList)
     }
     
     func adViewDidReceiveAd(_ bannerView: GADBannerView) {

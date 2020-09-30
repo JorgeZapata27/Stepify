@@ -863,7 +863,7 @@
             <objects>
                 <viewController storyboardIdentifier="SignUp" id="Qa6-6f-O4B" customClass="Sign_Up" customModule="Stepify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ckl-t4-T1f">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wW1-CI-zjx">
@@ -1752,7 +1752,7 @@ your email address.</string>
             <objects>
                 <viewController id="SiD-gL-YU7" customClass="User_Profile" customModule="Stepify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QZQ-UA-JgI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVV-C7-c3a">
@@ -1810,6 +1810,7 @@ your email address.</string>
                                 </state>
                                 <connections>
                                     <action selector="mainButtonPressed:" destination="SRQ-6P-RqA" eventType="touchUpInside" id="1aP-GO-krQ"/>
+                                    <action selector="mainButtonPressefd:" destination="SiD-gL-YU7" eventType="touchUpInside" id="IhG-Fa-mW8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1854,7 +1855,7 @@ your email address.</string>
             <objects>
                 <viewController id="x3F-e1-s2X" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fVa-JJ-tzs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Friends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2HI-Bv-Rc0">
