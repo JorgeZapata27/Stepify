@@ -11,6 +11,7 @@ import Firebase
 import HealthKit
 import GoogleMobileAds
 import FirebaseDatabase
+import UserNotifications
 import MBCircularProgressBar
 
 class Home: UIViewController, GADBannerViewDelegate {
@@ -23,17 +24,17 @@ class Home: UIViewController, GADBannerViewDelegate {
     let healthKitStore: HKHealthStore = HKHealthStore()
     
     var valueOfSteps = 0
+    var allUsers = [Leaderboard_User_Object]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.ButtonsSetup()
+        notifiactions()
         
-        // read healthkit
-        getSteps()
+        self.ButtonsSetup()
                 
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
-//        bannerView.adUnitID = "ca-app-pub-2433250329496395/3227435625" REAL
+//        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.adUnitID = "ca-app-pub-2433250329496395/3227435625"
         bannerView.rootViewController = self
         bannerView.delegate = self
         bannerView.load(GADRequest())
@@ -41,13 +42,64 @@ class Home: UIViewController, GADBannerViewDelegate {
         // Do any additional setup after loading the view.
     }
     
+    func notifiactions() {
+        if UserDefaults.standard.bool(forKey: "seenNotifcationsPopup") == false {
+            let center = UNUserNotificationCenter.current()
+            center.requestAuthorization(options: [.alert, .sound]) { (grantation, error) in
+                if grantation == true {
+                    let center = UNUserNotificationCenter.current()
+                    
+                    
+                    let content = UNMutableNotificationContent()
+                    content.title = "Are you ready for an active day? 💪"
+                    content.body = "Start walking to boost your daily average! 🚶‍♂️"
+                    content.categoryIdentifier = "alarm"
+                    content.userInfo = ["customData": "none"]
+                    content.sound = UNNotificationSound.default
+                    var dateComponents = DateComponents()
+                    dateComponents.hour = 7
+                    let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+                    let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+                    
+                    //
+                    let endDay = UNMutableNotificationContent()
+                    endDay.title = "The day is coming to an end! 🌙"
+                    endDay.body = "Get your last steps in now! 🚶‍♂️"
+                    endDay.categoryIdentifier = "alarm"
+                    endDay.userInfo = ["customData": "none"]
+                    endDay.sound = UNNotificationSound.default
+                    var dateComponentsendDay = DateComponents()
+                    dateComponentsendDay.hour = 20
+                    let triggerEnd = UNCalendarNotificationTrigger(dateMatching: dateComponentsendDay, repeats: true)
+                    let requestEndDay = UNNotificationRequest(identifier: UUID().uuidString, content: endDay, trigger: triggerEnd)
+                    
+                    center.add(request)
+                    center.add(requestEndDay)
+                    
+                    self.setUserDefault()
+                } else {
+                    self.setUserDefault()
+                }
+            }
+        } else {
+            print("okay")
+        }
+    }
+    
+    func setUserDefault() {
+        UserDefaults.standard.set(true, forKey: "seenNotifcationsPopup")
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        // read healthkit
+        getSteps()
         
         // update firebase
 //        // add steps to firebase key
 //        Database.database().reference().child("Users").child(Auth.auth().currentUser!.uid).child("steps").setValue(15200)
-        Database.database().reference().child("Users").child(Auth.auth().currentUser!.uid).child("steps").setValue(valueOfSteps)
+//        Database.database().reference().child("Users").child(Auth.auth().currentUser!.uid).child("steps").setValue(valueOfSteps)
     }
 
     // update step progress

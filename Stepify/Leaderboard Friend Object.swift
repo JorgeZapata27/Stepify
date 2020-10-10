@@ -11,5 +11,6 @@ import UIKit
 class Leaderboard_Friend_Object: NSObject {
     
     var uid : String?
+    var steps : Int?
 
 }

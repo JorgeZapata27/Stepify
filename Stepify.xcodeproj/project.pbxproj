@@ -33,7 +33,16 @@
 		78418DE1252074520052125F /* Leaderboard User Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78418DE0252074520052125F /* Leaderboard User Object.swift */; };
 		78418DE3252081160052125F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78418DE2252081160052125F /* Extensions.swift */; };
 		78418DE525208E9C0052125F /* Leaderboard Friend Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78418DE425208E9C0052125F /* Leaderboard Friend Object.swift */; };
+		789C874D252AF7D80087D5F7 /* ErrorReportWriteReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789C874C252AF7D80087D5F7 /* ErrorReportWriteReview.swift */; };
 		78FC3CC92523B09C00AD6963 /* User Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC3CC82523B09C00AD6963 /* User Profile.swift */; };
+		78FC3CCB25277F6B00AD6963 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC3CCA25277F6B00AD6963 /* PresentationController.swift */; };
+		78FC3CCD2527A3FF00AD6963 /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78FC3CCC2527A3FF00AD6963 /* OverlayView.xib */; };
+		78FC3CCF2527A57500AD6963 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC3CCE2527A57500AD6963 /* OverlayView.swift */; };
+		78FC3CD12528851500AD6963 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC3CD02528851500AD6963 /* GlobalVariables.swift */; };
+		78FC3CD325289BCC00AD6963 /* Notifications Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC3CD225289BCC00AD6963 /* Notifications Controller.swift */; };
+		78FC3CD525289CAA00AD6963 /* NotificationObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC3CD425289CAA00AD6963 /* NotificationObject.swift */; };
+		78FC3CD72528AD2D00AD6963 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC3CD62528AD2D00AD6963 /* Settings.swift */; };
+		78FC3CD92528E3A300AD6963 /* AnnotationPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC3CD82528E3A300AD6963 /* AnnotationPin.swift */; };
 		9A9EC3F9CD90947833E33C39 /* Pods_Stepify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE93648E00CD0B893D6E0B9 /* Pods_Stepify.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,7 +78,16 @@
 		78418DE0252074520052125F /* Leaderboard User Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Leaderboard User Object.swift"; sourceTree = "<group>"; };
 		78418DE2252081160052125F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		78418DE425208E9C0052125F /* Leaderboard Friend Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Leaderboard Friend Object.swift"; sourceTree = "<group>"; };
+		789C874C252AF7D80087D5F7 /* ErrorReportWriteReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorReportWriteReview.swift; sourceTree = "<group>"; };
 		78FC3CC82523B09C00AD6963 /* User Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User Profile.swift"; sourceTree = "<group>"; };
+		78FC3CCA25277F6B00AD6963 /* PresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
+		78FC3CCC2527A3FF00AD6963 /* OverlayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverlayView.xib; sourceTree = "<group>"; };
+		78FC3CCE2527A57500AD6963 /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		78FC3CD02528851500AD6963 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		78FC3CD225289BCC00AD6963 /* Notifications Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notifications Controller.swift"; sourceTree = "<group>"; };
+		78FC3CD425289CAA00AD6963 /* NotificationObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationObject.swift; sourceTree = "<group>"; };
+		78FC3CD62528AD2D00AD6963 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		78FC3CD82528E3A300AD6963 /* AnnotationPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationPin.swift; sourceTree = "<group>"; };
 		A313009FC01BFBE5EC8E1C6C /* Pods-Stepify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stepify.release.xcconfig"; path = "Target Support Files/Pods-Stepify/Pods-Stepify.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +129,7 @@
 				78173735251BCB1B0062FFA2 /* AppDelegate.swift */,
 				78173737251BCB1B0062FFA2 /* SceneDelegate.swift */,
 				78418DE2252081160052125F /* Extensions.swift */,
+				78FC3CD02528851500AD6963 /* GlobalVariables.swift */,
 				78173739251BCB1B0062FFA2 /* NavControllerView.swift */,
 				78173749251C6B500062FFA2 /* Onboarding1.swift */,
 				7817374B251C6B600062FFA2 /* Onboarding2.swift */,
@@ -125,11 +144,19 @@
 				7817375F251F2B420062FFA2 /* MainTabBarController.swift */,
 				78173767251F4AF70062FFA2 /* Home.swift */,
 				78076F57251FBEB7008143E2 /* Map.swift */,
+				78FC3CD82528E3A300AD6963 /* AnnotationPin.swift */,
 				78418DDC25206F9D0052125F /* Leaderboard.swift */,
 				78418DDE252073650052125F /* Leaderboard Cell.swift */,
 				78418DE0252074520052125F /* Leaderboard User Object.swift */,
 				78418DE425208E9C0052125F /* Leaderboard Friend Object.swift */,
 				78FC3CC82523B09C00AD6963 /* User Profile.swift */,
+				78FC3CCA25277F6B00AD6963 /* PresentationController.swift */,
+				78FC3CCE2527A57500AD6963 /* OverlayView.swift */,
+				78FC3CD225289BCC00AD6963 /* Notifications Controller.swift */,
+				78FC3CD425289CAA00AD6963 /* NotificationObject.swift */,
+				78FC3CD62528AD2D00AD6963 /* Settings.swift */,
+				789C874C252AF7D80087D5F7 /* ErrorReportWriteReview.swift */,
+				78FC3CCC2527A3FF00AD6963 /* OverlayView.xib */,
 				7817373B251BCB1B0062FFA2 /* Main.storyboard */,
 				7817373E251BCB240062FFA2 /* Assets.xcassets */,
 				78173740251BCB240062FFA2 /* LaunchScreen.storyboard */,
@@ -220,6 +247,7 @@
 			files = (
 				78173742251BCB240062FFA2 /* LaunchScreen.storyboard in Resources */,
 				78173762251F2F870062FFA2 /* GoogleService-Info.plist in Resources */,
+				78FC3CCD2527A3FF00AD6963 /* OverlayView.xib in Resources */,
 				7817373F251BCB240062FFA2 /* Assets.xcassets in Resources */,
 				7817373D251BCB1B0062FFA2 /* Main.storyboard in Resources */,
 			);
@@ -296,22 +324,30 @@
 				7817374E251C6B6B0062FFA2 /* Onboarding3.swift in Sources */,
 				7817375A251E5D4D0062FFA2 /* Add Photo.swift in Sources */,
 				78418DE525208E9C0052125F /* Leaderboard Friend Object.swift in Sources */,
+				78FC3CD525289CAA00AD6963 /* NotificationObject.swift in Sources */,
 				78FC3CC92523B09C00AD6963 /* User Profile.swift in Sources */,
+				78FC3CD92528E3A300AD6963 /* AnnotationPin.swift in Sources */,
 				78076F58251FBEB7008143E2 /* Map.swift in Sources */,
 				78173764251F31B70062FFA2 /* Sign In Nav.swift in Sources */,
 				78173760251F2B420062FFA2 /* MainTabBarController.swift in Sources */,
+				78FC3CCF2527A57500AD6963 /* OverlayView.swift in Sources */,
 				7817375C251F26F40062FFA2 /* Forgot Password.swift in Sources */,
 				78173766251F31C30062FFA2 /* Sign Up Nav.swift in Sources */,
 				7817374A251C6B500062FFA2 /* Onboarding1.swift in Sources */,
 				78173768251F4AF70062FFA2 /* Home.swift in Sources */,
+				78FC3CD12528851500AD6963 /* GlobalVariables.swift in Sources */,
 				7817373A251BCB1B0062FFA2 /* NavControllerView.swift in Sources */,
 				7817374C251C6B600062FFA2 /* Onboarding2.swift in Sources */,
+				78FC3CD72528AD2D00AD6963 /* Settings.swift in Sources */,
 				78418DDD25206F9D0052125F /* Leaderboard.swift in Sources */,
 				78173736251BCB1B0062FFA2 /* AppDelegate.swift in Sources */,
 				78418DE3252081160052125F /* Extensions.swift in Sources */,
 				78173738251BCB1B0062FFA2 /* SceneDelegate.swift in Sources */,
+				78FC3CD325289BCC00AD6963 /* Notifications Controller.swift in Sources */,
 				78173756251CE82E0062FFA2 /* Sign Up.swift in Sources */,
+				78FC3CCB25277F6B00AD6963 /* PresentationController.swift in Sources */,
 				7817375E251F2A400062FFA2 /* Forgot Password Success.swift in Sources */,
+				789C874D252AF7D80087D5F7 /* ErrorReportWriteReview.swift in Sources */,
 				78173754251CE64E0062FFA2 /* Sign In.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,16 +495,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Stepify/Stepify.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = ZH735L9VC9;
 				INFOPLIST_FILE = Stepify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "Jorge-Zapata.Stepify";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -479,16 +518,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Stepify/Stepify.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = ZH735L9VC9;
 				INFOPLIST_FILE = Stepify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "Jorge-Zapata.Stepify";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

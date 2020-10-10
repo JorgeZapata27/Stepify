@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 import GoogleMobileAds
 
 class User_Profile: UIViewController, GADBannerViewDelegate {
@@ -16,8 +18,8 @@ class User_Profile: UIViewController, GADBannerViewDelegate {
     @IBOutlet var name : UILabel!
     @IBOutlet var email : UILabel!
     @IBOutlet var step : UILabel!
-    @IBOutlet var friendsButton : UIButton!
     @IBOutlet var bannerView : GADBannerView!
+    @IBOutlet var friendsButton : UIButton!
     
     var imageURL = ""
     var nameOfUser = ""
@@ -31,14 +33,22 @@ class User_Profile: UIViewController, GADBannerViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
-//      bannerView.adUnitID = "ca-app-pub-2433250329496395/7051803010" REAL
+        if self.isFriends == true {
+            // remove
+            self.friendsButton.setTitle("Remove from Friends", for: .normal)
+        } else {
+            // add
+            self.friendsButton.setTitle("Add to Friends", for: .normal)
+        }
+        
+//        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+      bannerView.adUnitID = "ca-app-pub-2433250329496395/7051803010"
         bannerView.rootViewController = self
         bannerView.delegate = self
         bannerView.load(GADRequest())
         
-        self.friendsButton.layer.cornerRadius = 12
         self.profileImageView.layer.cornerRadius = 62.5
+        self.friendsButton.layer.cornerRadius = 12
 
         // Do any additional setup after loading the view.
     }
@@ -50,83 +60,6 @@ class User_Profile: UIViewController, GADBannerViewDelegate {
         self.name!.text! = nameOfUser
         self.email!.text! = emailAddress
         self.step!.text! = String("\(stepCount) Steps")
-        
-        if self.isFriends == true {
-            // friends
-            self.friendsButton.setTitle("Remove from Friends", for: .normal)
-        } else {
-            // not friends
-            self.friendsButton.setTitle("Add to Friends", for: .normal)
-        }
-    }
-    
-    func addAsFriend() {
-        // get list
-        Database.database().reference().child("Users").child(Auth.auth().currentUser!.uid).child("Friends").observe(.childAdded, with: { (snapshot) in
-                    if let value = snapshot.value as? [String : Any] {
-                        let user = Leaderboard_Friend_Object()
-                        user.uid = value["uid"] as? String ?? "Error"
-                        // put into uid array
-                        self.searchFriends.append(user)
-                    }
-                    for friend in self.searchFriends {
-                        print(friend.uid!)
-                    }
-                    // with uid array, add info in a friend array similar to all users.
-                    for user in self.searchFriends {
-                        print("found user")
-                        print(user.uid!)
-                        Database.database().reference().child("Users").child(user.uid!).observe(.value) { (snapshot) in
-                            if let value = snapshot.value as? [String : Any] {
-                                let user = Leaderboard_User_Object()
-                                user.uid = value["uid"] as? String ?? "Error"
-                                user.name = value["firstname"] as? String ?? "Error"
-                                user.steps = value["steps"] as? Int ?? 0
-                                user.email = value["email"] as? String ?? "Error"
-                                user.profileImageUrl = value["profilePhoto"] as? String ?? "Error"
-                                print(user.uid!)
-                                print(user.name!)
-                                print(user.steps!)
-                                print(user.profileImageUrl!)
-                                self.allFriends.append(user)
-                            }
-                            let currentUser = Leaderboard_User_Object()
-                            currentUser.uid = self.uid
-                            currentUser.name = self.nameOfUser
-                            currentUser.steps = self.stepCount
-                            currentUser.email = self.emailAddress
-                            currentUser.profileImageUrl = self.imageURL
-                            print("currentUser")
-                            print(currentUser)
-                            print(currentUser.uid!)
-                            print("currentUser")
-                            print("Array User")
-                            for friend in self.allFriends {
-                                print(friend.uid!)
-                            }
-                            print("Array User")
-                            if self.allFriends.contains(where: { $0.uid == self.uid }) {
-                                print("USER WILL BE REMOVED")
-                                Database.database().reference().child("Users").child(Auth.auth().currentUser!.uid).child("Friends").child(self.uid).removeValue()
-                                // alert of success
-                            } else {
-                                print("USER WILL BE ADDED")
-                                let friends = ["uid" : "\(self.uid)"] as [String : Any]
-                                let totalList = ["\(self.uid)" : friends]
-                                Database.database().reference().child("Users").child(Auth.auth().currentUser!.uid).child("Friends").updateChildValues(totalList)
-                                // alert of success
-                            }
-                        }
-                    }
-                })
-        
-        // if list contains, do nothing
-        // else, add
-        
-//        let key = Database.database().reference().child("Users").childByAutoId().key
-//        let friends = ["uid" : "\(Auth.auth().currentUser!.uid)"] as [String : Any]
-//        let totalList = ["\(key!)" : friends]
-//        Database.database().reference().child("Users").child(Auth.auth().currentUser!.uid).child("Friends").updateChildValues(totalList)
     }
     
     func adViewDidReceiveAd(_ bannerView: GADBannerView) {
@@ -137,8 +70,17 @@ class User_Profile: UIViewController, GADBannerViewDelegate {
         print(error.localizedDescription)
     }
     
-    @IBAction func mainButtonPressefd(_ sender: UIButton) {
-        self.addAsFriend()
+    @IBAction func addorremoveFriend(_ sender: UIButton) {
+        if self.isFriends == true {
+            // remove
+            Database.database().reference().child("Users").child(Auth.auth().currentUser!.uid).child("Friends").child(self.uid).removeValue()
+        } else {
+            // add
+            let friends = ["uid" : "\(self.uid)"] as [String : Any]
+            let totalList = ["\(self.uid)" : friends]
+            Database.database().reference().child("Users").child(Auth.auth().currentUser!.uid).child("Friends").updateChildValues(totalList)
+            // alert of success
+        }
     }
 
 }

@@ -12,6 +12,7 @@ class Leaderboard_Cell: UITableViewCell {
     
     @IBOutlet var profileImage : UIImageView!
     @IBOutlet var titleName : UILabel!
+    @IBOutlet var emojiButton : UIButton!
     @IBOutlet var stepCount : UILabel!
 
     override func awakeFromNib() {

@@ -23,8 +23,8 @@ class Forgot_Password: UIViewController, UITextFieldDelegate, GADBannerViewDeleg
         self.TextFieldSetup()
         self.ButtonsSetup()
         
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
-//        bannerView.adUnitID = "ca-app-pub-2433250329496395/4871689786" REAL
+//        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.adUnitID = "ca-app-pub-2433250329496395/4871689786"
         bannerView.rootViewController = self
         bannerView.delegate = self
         bannerView.load(GADRequest())

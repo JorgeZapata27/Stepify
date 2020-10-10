@@ -23,6 +23,7 @@ class Add_Photo: UIViewController, UIImagePickerControllerDelegate, UINavigation
     let pickerController = UIImagePickerController()
     
     var status = false
+    var fromSettings : Bool?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,9 +61,13 @@ class Add_Photo: UIViewController, UIImagePickerControllerDelegate, UINavigation
                     if let metaImageURL = url?.absoluteString {
                         print(metaImageURL)
                         Database.database().reference().child("Users").child((Auth.auth().currentUser!.uid)).child("profilePhoto").setValue(metaImageURL)
-                        let sb = UIStoryboard(name: "Main", bundle: nil)
-                        let vc: UIViewController = sb.instantiateViewController(withIdentifier: "TabBarMain") as! MainTabBarController
-                        UIApplication.shared.keyWindow?.rootViewController = vc
+                        if self.fromSettings == true {
+                            self.dismiss(animated: true, completion: nil)
+                        } else {
+                            let sb = UIStoryboard(name: "Main", bundle: nil)
+                            let vc: UIViewController = sb.instantiateViewController(withIdentifier: "TabBarMain") as! MainTabBarController
+                            UIApplication.shared.keyWindow?.rootViewController = vc
+                        }
                     } else {
                         print(error3!.localizedDescription)
                     }

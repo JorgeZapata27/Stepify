@@ -4,8 +4,6 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
-    <key>GADApplicationIdentifier</key>
-    <string>ca-app-pub-2433250329496395~1918223384</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -17,7 +15,7 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -30,11 +28,15 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>13</string>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-2433250329496395~1918223384</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSHealthShareUsageDescription</key>
 	<string>Please let accept the usage of your daily step count so you can see your steps and compete with friends!</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>Please allow to read and write health data in order to access and update your steps!</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Please allow location, so you and your friends can see where you are competing from!</string>
 	<key>NSPhotoLibraryUsageDescription</key>
@@ -69,8 +71,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

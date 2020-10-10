@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 class Onboarding3: UIViewController {
     
@@ -23,28 +24,25 @@ class Onboarding3: UIViewController {
     }
     
     @IBAction func signInButtonPressed(_ sender: UIButton) {
+        self.goToSignIn()
+    }
+    
+    func goToSignIn() {
         UserDefaults.standard.set(true, forKey: "onboardingSeen")
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc: UIViewController = sb.instantiateViewController(withIdentifier: "SignInNav") as! Sign_In_Nav
         UIApplication.shared.keyWindow?.rootViewController = vc
     }
     
-    @IBAction func signUpButtonPressed(_ sender: UIButton) {
+    func goToSignUp() {
         UserDefaults.standard.set(true, forKey: "onboardingSeen")
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc: UIViewController = sb.instantiateViewController(withIdentifier: "SignUpNav") as! Sign_Up_Nav
         UIApplication.shared.keyWindow?.rootViewController = vc
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func signUpButtonPressed(_ sender: UIButton) {
+        goToSignUp()
     }
-    */
 
 }

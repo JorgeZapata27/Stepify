@@ -15,5 +15,6 @@ class Leaderboard_User_Object: NSObject {
     var profileImageUrl : String?
     var email : String?
     var steps : Int?
-
+    var long : Double?
+    var lati : Double?
 }

@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            print(error)
 //        }
         
+//        Auth.auth().createUser(withEmail: "evannathanial@gmail.com", password: "EvanZapataUser25", completion: nil)
+        
         GIDSignIn.sharedInstance()?.clientID = FirebaseApp.app()?.options.clientID
         GADMobileAds.sharedInstance().start(completionHandler: nil)
         

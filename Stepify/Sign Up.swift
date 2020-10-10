@@ -164,12 +164,6 @@ class Sign_Up: UIViewController, UITextFieldDelegate, ASAuthorizationControllerP
         }
     }
     
-    func hello() {
-        let friends = ["uid" : "\(Auth.auth().currentUser!.uid)"] as [String : Any]
-        let totalList = ["\(Auth.auth().currentUser!.uid)" : friends]
-        Database.database().reference().child("Users").child(Auth.auth().currentUser!.uid).child("Friends").updateChildValues(totalList)
-    }
-    
     func ButtonsSetup() {
         self.signUpButton.layer.cornerRadius = 10
     }
@@ -222,7 +216,6 @@ class Sign_Up: UIViewController, UITextFieldDelegate, ASAuthorizationControllerP
                 ]
                 Database.database().reference().child("Users").child(Auth.auth().currentUser!.uid).updateChildValues(dict) { (error, ref) in
                         if error == nil {
-                            self.hello()
                             self.performSegue(withIdentifier: "toImageChoose", sender: self)
                         } else {
                             let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
@@ -440,7 +433,6 @@ class Sign_Up: UIViewController, UITextFieldDelegate, ASAuthorizationControllerP
                             Database.database().reference().child("Users").child(Auth.auth().currentUser!.uid).updateChildValues(dict) { (error, ref) in
 
                                 if error == nil {
-                                    self.hello()
                                     self.performSegue(withIdentifier: "toImageChoose", sender: self)
                                 }
 
@@ -511,7 +503,6 @@ class Sign_Up: UIViewController, UITextFieldDelegate, ASAuthorizationControllerP
             "memberSince" : "\(self.memberSinceString)"
             ] as [String : Any]
             Database.database().reference().child("Users").child(uid).updateChildValues(values) { (error, result) in
-                self.hello()
                 self.performSegue(withIdentifier: "toImageChoose", sender: self)
             }
         }
