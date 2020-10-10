@@ -133,6 +133,7 @@ class Leaderboard: UIViewController, UITableViewDelegate, UITableViewDataSource,
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "leaderboardFriends", for: indexPath) as! Leaderboard_Cell
+            cell.emojiButton.addTarget(self, action: #selector(openPopup), for: .touchUpInside)
             Database.database().reference().child("Users").child(self.searchFriends[indexPath.row].uid!).child("steps").observe(.value) { (steps) in
                 let value = steps.value as? NSNumber
                 let integer = Int(value!)
@@ -141,12 +142,9 @@ class Leaderboard: UIViewController, UITableViewDelegate, UITableViewDataSource,
                 Database.database().reference().child("Users").child(self.searchFriends[indexPath.row].uid!).child("firstname").observe(.value) { (firstname) in
                     let firstname : String = (firstname.value as? String)!
                     cell.titleName!.text! = firstname
-                    Database.database().reference().child("Users").child(self.searchFriends[indexPath.row].uid!).child("profilePhoto").observe(.value) { (firstname) in
-                        if let profilePhoto : String = (firstname.value as? String)! {
-                            cell.profileImage.loadImageUsingCacheWithUrlString(profilePhoto)
-                        } else {
-                            cell.profileImage.loadImageUsingCacheWithUrlString("https://www.google.com/url?q=https://is4-ssl.mzstatic.com/image/thumb/Purple124/v4/bc/5c/2f/bc5c2f80-f2d9-de4d-1fef-f2170e45a717/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/492x0w.png&source=gmail&ust=1602418896999000&usg=AFQjCNE2ygJQZOFtAx3kKhzRkhvy6aGezA")
-                        }
+                    Database.database().reference().child("Users").child(self.searchFriends[indexPath.row].uid!).child("profilePhoto").observe(.value) { (photoURL) in
+                        let profilePhoto : String = (photoURL.value as? String)!
+                        cell.profileImage.loadImageUsingCacheWithUrlString(profilePhoto)
                         Database.database().reference().child("Users").child(self.searchFriends[indexPath.row].uid!).child("email").observe(.value) { (email) in
                             let emailOfUser : String = (email.value as? String)!
                             cell.stepCount!.text! = emailOfUser
@@ -167,8 +165,13 @@ class Leaderboard: UIViewController, UITableViewDelegate, UITableViewDataSource,
     @objc func openPopup(_ sender: UIButton) {
         // tell global variables the tapped uid
         let indexPathRow = sender.tag
-        GlobalVariables.uidTappedFromLeaderboard = "\(self.allUsers[indexPathRow].uid!)"
-        self.tossUpReaction()
+        if self.segmentedControl.selectedSegmentIndex == 0 {
+            GlobalVariables.uidTappedFromLeaderboard = "\(self.allUsers[indexPathRow].uid!)"
+            self.tossUpReaction()
+        } else {
+            GlobalVariables.uidTappedFromLeaderboard = "\(self.searchFriends[indexPathRow].uid!)"
+            self.tossUpReaction()
+        }
     }
     
     @IBAction func add(_ sender: UIButton) {
