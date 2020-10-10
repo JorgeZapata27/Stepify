@@ -74,12 +74,17 @@ class User_Profile: UIViewController, GADBannerViewDelegate {
         if self.isFriends == true {
             // remove
             Database.database().reference().child("Users").child(Auth.auth().currentUser!.uid).child("Friends").child(self.uid).removeValue()
+            let alert = UIAlertController(title: "Success", message: "User was removed successfully", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         } else {
             // add
             let friends = ["uid" : "\(self.uid)"] as [String : Any]
             let totalList = ["\(self.uid)" : friends]
             Database.database().reference().child("Users").child(Auth.auth().currentUser!.uid).child("Friends").updateChildValues(totalList)
-            // alert of success
+            let alert = UIAlertController(title: "Success", message: "User was added successfully!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
     }
 

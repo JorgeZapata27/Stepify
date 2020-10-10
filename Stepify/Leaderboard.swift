@@ -133,31 +133,34 @@ class Leaderboard: UIViewController, UITableViewDelegate, UITableViewDataSource,
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "leaderboardFriends", for: indexPath) as! Leaderboard_Cell
-            
-            Database.database().reference().child("Users").child(self.searchFriends[indexPath.row].uid!).child("firstname").observe(.value) { (firstname) in
-                let firstname : String = (firstname.value as? String)!
-                cell.titleName!.text! = firstname
-            }
-            
-            Database.database().reference().child("Users").child(self.searchFriends[indexPath.row].uid!).child("profilePhoto").observe(.value) { (firstname) in
-                if let profilePhoto : String = (firstname.value as? String)! {
-                    cell.profileImage.loadImageUsingCacheWithUrlString(profilePhoto)
-                } else {
-                    cell.profileImage.loadImageUsingCacheWithUrlString("https://www.google.com/url?q=https://is4-ssl.mzstatic.com/image/thumb/Purple124/v4/bc/5c/2f/bc5c2f80-f2d9-de4d-1fef-f2170e45a717/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/492x0w.png&source=gmail&ust=1602418896999000&usg=AFQjCNE2ygJQZOFtAx3kKhzRkhvy6aGezA")
-                }
-            }
-            
             Database.database().reference().child("Users").child(self.searchFriends[indexPath.row].uid!).child("steps").observe(.value) { (steps) in
                 let value = steps.value as? NSNumber
                 let integer = Int(value!)
-                cell.stepCount!.text! = "\(integer) Steps"
+                self.searchFriends.sort(by: { $1.steps! < $0.steps!})
+//                cell.stepCount!.text! = "\(integer) Steps"
+                Database.database().reference().child("Users").child(self.searchFriends[indexPath.row].uid!).child("firstname").observe(.value) { (firstname) in
+                    let firstname : String = (firstname.value as? String)!
+                    cell.titleName!.text! = firstname
+                    Database.database().reference().child("Users").child(self.searchFriends[indexPath.row].uid!).child("profilePhoto").observe(.value) { (firstname) in
+                        if let profilePhoto : String = (firstname.value as? String)! {
+                            cell.profileImage.loadImageUsingCacheWithUrlString(profilePhoto)
+                        } else {
+                            cell.profileImage.loadImageUsingCacheWithUrlString("https://www.google.com/url?q=https://is4-ssl.mzstatic.com/image/thumb/Purple124/v4/bc/5c/2f/bc5c2f80-f2d9-de4d-1fef-f2170e45a717/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/492x0w.png&source=gmail&ust=1602418896999000&usg=AFQjCNE2ygJQZOFtAx3kKhzRkhvy6aGezA")
+                        }
+                        Database.database().reference().child("Users").child(self.searchFriends[indexPath.row].uid!).child("email").observe(.value) { (email) in
+                            let emailOfUser : String = (email.value as? String)!
+                            cell.stepCount!.text! = emailOfUser
+
+                            Database.database().reference().child("Users").child(self.searchFriends[indexPath.row].uid!).child("steps").observe(.value) { (steps) in
+                                let stepVal = steps.value as? NSNumber
+                                let integer = Int(stepVal!)
+                                cell.stepCount!.text! = String("\(integer) Steps")
+                            }
+                        }
+                    }
+                }
             }
-            
-//            cell.profileImage.loadImageUsingCacheWithUrlString(self.searchFriends[indexPath.row].profileImageUrl!)
-//            cell.titleName.text = self.allFriends[indexPath.row].name!
-//            cell.stepCount.text = String("\(self.allFriends[indexPath.row].steps!) Steps")
             return cell
-            // friends
         }
     }
     
