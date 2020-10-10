@@ -148,7 +148,6 @@ class Leaderboard: UIViewController, UITableViewDelegate, UITableViewDataSource,
                 let value = steps.value as? NSNumber
                 let integer = Int(value!)
                 cell.stepCount!.text! = "\(integer) Steps"
-                self.searchFriends.sort(by: { $1.uid! < $0.uid!})
             }
             
 //            cell.profileImage.loadImageUsingCacheWithUrlString(self.searchFriends[indexPath.row].profileImageUrl!)
@@ -214,12 +213,30 @@ class Leaderboard: UIViewController, UITableViewDelegate, UITableViewDataSource,
             secondController.isFriends = false
         } else if segue.identifier == "toFriendFromLeaderboard" {
             let secondController = segue.destination as! User_Profile
-//            secondController.imageURL = self.allFriends[openIndex].profileImageUrl!
-//            secondController.nameOfUser = self.allFriends[openIndex].name!
-//            secondController.uid = self.allFriends[openIndex].uid!
-//            secondController.emailAddress = self.allFriends[openIndex].email!
-//            secondController.stepCount = self.allFriends[openIndex].steps!
+            
+            Database.database().reference().child("Users").child(self.searchFriends[openIndex].uid!).child("profilePhoto").observe(.value) { (firstname) in
+                let profilePoto : String = (firstname.value as? String)!
+                secondController.imageURL = profilePoto
+            }
+            
+            Database.database().reference().child("Users").child(self.searchFriends[openIndex].uid!).child("firstname").observe(.value) { (firstname) in
+                let firstname : String = (firstname.value as? String)!
+                secondController.nameOfUser = firstname
+            }
+            
+            Database.database().reference().child("Users").child(self.searchFriends[openIndex].uid!).child("steps").observe(.value) { (steps) in
+                let value = steps.value as? NSNumber
+                let integer = Int(value!)
+                secondController.stepCount = integer
+            }
+            
+            Database.database().reference().child("Users").child(self.searchFriends[openIndex].uid!).child("email").observe(.value) { (emaiil) in
+                let email : String = (emaiil.value as? String)!
+                secondController.emailAddress = email
+            }
+            
             secondController.isFriends = true
+            secondController.uid = self.searchFriends[openIndex].uid!
         }
     }
     
