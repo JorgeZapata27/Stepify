@@ -84,8 +84,11 @@ class Notifications_Controller: UIViewController, UITableViewDelegate, UITableVi
             cell.titleName!.text! = "\(name) Reacted: \(self.notifications[indexPath.row].message!)"
         })
         Database.database().reference().child("Users").child(uid).child("profilePhoto").observe(.value, with: { (data) in
-            let url : String = (data.value as? String)!
-            cell.profileImage.loadImageUsingCacheWithUrlString(url)
+            if let url : String = (data.value as? String)! {
+                cell.profileImage.loadImageUsingCacheWithUrlString(url)
+            } else {
+                cell.profileImage.loadImageUsingCacheWithUrlString("https://www.google.com/url?q=https://is4-ssl.mzstatic.com/image/thumb/Purple124/v4/bc/5c/2f/bc5c2f80-f2d9-de4d-1fef-f2170e45a717/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/492x0w.png&source=gmail&ust=1602418896999000&usg=AFQjCNE2ygJQZOFtAx3kKhzRkhvy6aGezA")
+            }
         })
         return cell
     }
