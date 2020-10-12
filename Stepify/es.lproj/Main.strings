@@ -1,0 +1,270 @@
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "17X-sp-Rbn"; */
+"17X-sp-Rbn.text" = "Email";
+
+/* Class = "UILabel"; text = "Sign in with Google"; ObjectID = "1Nm-EA-ufK"; */
+"1Nm-EA-ufK.text" = "Sign in with Google";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "1o8-m3-LHX"; */
+"1o8-m3-LHX.placeholder" = "Search";
+
+/* Class = "UISearchBar"; 1o8-m3-LHX.scopeButtonTitles[0] = "Title"; ObjectID = "1o8-m3-LHX"; */
+"1o8-m3-LHX.scopeButtonTitles[0]" = "Title";
+
+/* Class = "UISearchBar"; 1o8-m3-LHX.scopeButtonTitles[1] = "Title"; ObjectID = "1o8-m3-LHX"; */
+"1o8-m3-LHX.scopeButtonTitles[1]" = "Title";
+
+/* Class = "UILabel"; text = "Leaderboard"; ObjectID = "53Y-Wz-YVx"; */
+"53Y-Wz-YVx.text" = "Leaderboard";
+
+/* Class = "UIButton"; normalTitle = "Next →"; ObjectID = "5iN-eo-tZF"; */
+"5iN-eo-tZF.normalTitle" = "Next →";
+
+/* Class = "UITextField"; placeholder = "Write Here"; ObjectID = "6ZB-UM-awv"; */
+"6ZB-UM-awv.placeholder" = "Write Here";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "7lu-mZ-OJp"; */
+"7lu-mZ-OJp.text" = "Name";
+
+/* Class = "UIButton"; normalTitle = "Invite"; ObjectID = "8PF-Gg-YiC"; */
+"8PF-Gg-YiC.normalTitle" = "Invite";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "8SC-Hd-KqN"; */
+"8SC-Hd-KqN.text" = "Name";
+
+/* Class = "UILabel"; text = "und"; ObjectID = "8ch-kj-kDP"; */
+"8ch-kj-kDP.text" = "und";
+
+/* Class = "UILabel"; text = "STEPS"; ObjectID = "9Wf-ME-wXe"; */
+"9Wf-ME-wXe.text" = "STEPS";
+
+/* Class = "UINavigationItem"; title = "Create Account"; ObjectID = "B1j-Wt-W7H"; */
+"B1j-Wt-W7H.title" = "Create Account";
+
+/* Class = "UILabel"; text = "Steps"; ObjectID = "B7J-la-Xfx"; */
+"B7J-la-Xfx.text" = "Steps";
+
+/* Class = "UIButton"; normalTitle = "+"; ObjectID = "BMr-Jx-Zlc"; */
+"BMr-Jx-Zlc.normalTitle" = "+";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "Bj9-CR-1UD"; */
+"Bj9-CR-1UD.normalTitle" = "Submit";
+
+/* Class = "UIButton"; normalTitle = "Change Image"; ObjectID = "BvW-yU-dwq"; */
+"BvW-yU-dwq.normalTitle" = "Change Image";
+
+/* Class = "UINavigationItem"; title = "Sign In"; ObjectID = "CLa-ZD-czG"; */
+"CLa-ZD-czG.title" = "Sign In";
+
+/* Class = "UILabel"; text = "Today"; ObjectID = "D27-jV-Nfr"; */
+"D27-jV-Nfr.text" = "Today";
+
+/* Class = "UILabel"; text = "Password reset link has been sent \nyour email address."; ObjectID = "D8I-Ns-APp"; */
+"D8I-Ns-APp.text" = "Password reset link has been sent \nyour email address.";
+
+/* Class = "UIButton"; normalTitle = "Don't Have An Account?"; ObjectID = "E56-m3-Ho2"; */
+"E56-m3-Ho2.normalTitle" = "Don't Have An Account?";
+
+/* Class = "UIButton"; normalTitle = "Already on Stepify? Sign In"; ObjectID = "E5K-2n-6a6"; */
+"E5K-2n-6a6.normalTitle" = "Already on Stepify? Sign In";
+
+/* Class = "UILabel"; text = "Of 10,000"; ObjectID = "EoK-hL-VNE"; */
+"EoK-hL-VNE.text" = "Of 10,000";
+
+/* Class = "UIButton"; normalTitle = "Logout"; ObjectID = "Ep7-Mz-HCL"; */
+"Ep7-Mz-HCL.normalTitle" = "Logout";
+
+/* Class = "UILabel"; text = "Sign in with Apple"; ObjectID = "Fld-vG-Yap"; */
+"Fld-vG-Yap.text" = "Sign in with Apple";
+
+/* Class = "UITextField"; placeholder = "Write Here"; ObjectID = "HLh-Uh-88q"; */
+"HLh-Uh-88q.placeholder" = "Write Here";
+
+/* Class = "UILabel"; text = "Allow your location, so friends can see where you are, and how you’re moving around!"; ObjectID = "HOu-zq-PS0"; */
+"HOu-zq-PS0.text" = "Allow your location, so friends can see where you are, and how you’re moving around!";
+
+/* Class = "UITextField"; placeholder = "Write Here"; ObjectID = "JFf-H6-Jhi"; */
+"JFf-H6-Jhi.placeholder" = "Write Here";
+
+/* Class = "UILabel"; text = "Add Profile Photo"; ObjectID = "JaY-09-Sd1"; */
+"JaY-09-Sd1.text" = "Add Profile Photo";
+
+/* Class = "UILabel"; text = "By enabling HealthKit, you can compete over who has walked the most each day!"; ObjectID = "Jem-e0-DbQ"; */
+"Jem-e0-DbQ.text" = "By enabling HealthKit, you can compete over who has walked the most each day!";
+
+/* Class = "UITextField"; placeholder = "Write Here! :) "; ObjectID = "Kbx-hw-5ZI"; */
+"Kbx-hw-5ZI.placeholder" = "Write Here! :) ";
+
+/* Class = "UILabel"; text = "😬"; ObjectID = "Kdr-5o-NcH"; */
+"Kdr-5o-NcH.text" = "😬";
+
+/* Class = "UILabel"; text = "🎉"; ObjectID = "My4-Lz-RbK"; */
+"My4-Lz-RbK.text" = "🎉";
+
+/* Class = "UILabel"; text = "Settings"; ObjectID = "N3z-FC-frr"; */
+"N3z-FC-frr.text" = "Settings";
+
+/* Class = "UIButton"; normalTitle = "Requesting A Feature / Error Reporting?"; ObjectID = "N8c-lE-FHn"; */
+"N8c-lE-FHn.normalTitle" = "Requesting A Feature / Error Reporting?";
+
+/* Class = "UILabel"; text = "Or"; ObjectID = "NCq-tD-SdR"; */
+"NCq-tD-SdR.text" = "Or";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "OHL-bx-N4E"; */
+"OHL-bx-N4E.text" = "Email";
+
+/* Class = "UILabel"; text = "💪"; ObjectID = "ORP-A5-cPF"; */
+"ORP-A5-cPF.text" = "💪";
+
+/* Class = "UILabel"; text = "Your latest"; ObjectID = "OZc-iz-MKY"; */
+"OZc-iz-MKY.text" = "Your latest";
+
+/* Class = "UILabel"; text = "Reset Password"; ObjectID = "Odg-6G-6Jc"; */
+"Odg-6G-6Jc.text" = "Reset Password";
+
+/* Class = "UIButton"; normalTitle = "Forgot Password?"; ObjectID = "PUU-hm-My2"; */
+"PUU-hm-My2.normalTitle" = "Forgot Password?";
+
+/* Class = "UISegmentedControl"; RSi-gR-Syn.segmentTitles[0] = "All Users"; ObjectID = "RSi-gR-Syn"; */
+"RSi-gR-Syn.segmentTitles[0]" = "All Users";
+
+/* Class = "UISegmentedControl"; RSi-gR-Syn.segmentTitles[1] = "Friends"; ObjectID = "RSi-gR-Syn"; */
+"RSi-gR-Syn.segmentTitles[1]" = "Friends";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "RVV-C7-c3a"; */
+"RVV-C7-c3a.text" = "Name";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "Ruj-ae-Xxu"; */
+"Ruj-ae-Xxu.text" = "Name";
+
+/* Class = "UILabel"; text = "Oder"; ObjectID = "SMA-Aa-c4s"; */
+"SMA-Aa-c4s.text" = "Oder";
+
+/* Class = "UIButton"; normalTitle = "Finish Setup"; ObjectID = "TAA-fl-HSO"; */
+"TAA-fl-HSO.normalTitle" = "Finish Setup";
+
+/* Class = "UIButton"; normalTitle = "Share Stepify"; ObjectID = "UYF-vJ-zKR"; */
+"UYF-vJ-zKR.normalTitle" = "Share Stepify";
+
+/* Class = "UIButton"; normalTitle = "Rate Us"; ObjectID = "Urm-Z8-GOG"; */
+"Urm-Z8-GOG.normalTitle" = "Rate Us";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "VAU-lO-2Lc"; */
+"VAU-lO-2Lc.text" = "Email";
+
+/* Class = "UILabel"; text = "Full Name"; ObjectID = "VFJ-Ff-heo"; */
+"VFJ-Ff-heo.text" = "Full Name";
+
+/* Class = "UIButton"; normalTitle = "Clear All"; ObjectID = "VFg-5N-YnC"; */
+"VFg-5N-YnC.normalTitle" = "Clear All";
+
+/* Class = "UILabel"; text = "Steps"; ObjectID = "VbL-TF-KMZ"; */
+"VbL-TF-KMZ.text" = "Steps";
+
+/* Class = "UIButton"; normalTitle = "Delete My Account"; ObjectID = "WI5-tc-pTR"; */
+"WI5-tc-pTR.normalTitle" = "Delete My Account";
+
+/* Class = "UILabel"; text = "Today’s Leaderboard"; ObjectID = "WXH-2F-wXR"; */
+"WXH-2F-wXR.text" = "Today’s Leaderboard";
+
+/* Class = "UIButton"; normalTitle = "Policies"; ObjectID = "Yca-Ce-xca"; */
+"Yca-Ce-xca.normalTitle" = "Policies";
+
+/* Class = "UILabel"; text = "Compete"; ObjectID = "Ycw-w8-Kd9"; */
+"Ycw-w8-Kd9.text" = "Compete";
+
+/* Class = "UILabel"; text = "Account"; ObjectID = "YpK-8l-pCF"; */
+"YpK-8l-pCF.text" = "Account";
+
+/* Class = "UILabel"; text = "📍"; ObjectID = "ZMP-j5-hb7"; */
+"ZMP-j5-hb7.text" = "📍";
+
+/* Class = "UILabel"; text = "Email Sent"; ObjectID = "a3O-cB-MLo"; */
+"a3O-cB-MLo.text" = "Email Sent";
+
+/* Class = "UIButton"; normalTitle = "Create Account"; ObjectID = "c8T-r1-Ptn"; */
+"c8T-r1-Ptn.normalTitle" = "Create Account";
+
+/* Class = "UILabel"; text = "By signing up, you agree to our:"; ObjectID = "dVr-nO-kr0"; */
+"dVr-nO-kr0.text" = "By signing up, you agree to our:";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "dq9-dl-OW1"; */
+"dq9-dl-OW1.text" = "Email";
+
+/* Class = "UILabel"; text = "Notifications"; ObjectID = "eKC-J3-ABe"; */
+"eKC-J3-ABe.text" = "Notifications";
+
+/* Class = "UILabel"; text = "App"; ObjectID = "fIc-Uv-0ak"; */
+"fIc-Uv-0ak.text" = "App";
+
+/* Class = "UILabel"; text = "Sign in with Google"; ObjectID = "fgh-Ip-8vx"; */
+"fgh-Ip-8vx.text" = "Sign in with Google";
+
+/* Class = "UILabel"; text = "Find Friends"; ObjectID = "ftn-yb-lZ8"; */
+"ftn-yb-lZ8.text" = "Find Friends";
+
+/* Class = "UIButton"; normalTitle = "Create Account"; ObjectID = "gJm-Ah-JPS"; */
+"gJm-Ah-JPS.normalTitle" = "Create Account";
+
+/* Class = "UIButton"; normalTitle = "Terms"; ObjectID = "iL6-Vs-zTm"; */
+"iL6-Vs-zTm.normalTitle" = "Terms";
+
+/* Class = "UIButton"; normalTitle = "Action Button"; ObjectID = "jTz-B0-3Bu"; */
+"jTz-B0-3Bu.normalTitle" = "Action Button";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "jwe-Ng-CEV"; */
+"jwe-Ng-CEV.text" = "Password";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "k7E-Ve-6yJ"; */
+"k7E-Ve-6yJ.text" = "Password";
+
+/* Class = "UITextField"; placeholder = "Write Here"; ObjectID = "lrb-2n-16l"; */
+"lrb-2n-16l.placeholder" = "Write Here";
+
+/* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "lse-kp-9oI"; */
+"lse-kp-9oI.normalTitle" = "Sign In";
+
+/* Class = "UILabel"; text = "Step up your game, with Stepify"; ObjectID = "m3v-hS-bjq"; */
+"m3v-hS-bjq.text" = "Step up your game, with Stepify";
+
+/* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "n77-FU-VpE"; */
+"n77-FU-VpE.normalTitle" = "Sign In";
+
+/* Class = "UIButton"; normalTitle = "Share Stepify"; ObjectID = "oIK-E7-nwn"; */
+"oIK-E7-nwn.normalTitle" = "Share Stepify";
+
+/* Class = "UITextField"; placeholder = "Write Here"; ObjectID = "oVj-IY-XPb"; */
+"oVj-IY-XPb.placeholder" = "Write Here";
+
+/* Class = "UILabel"; text = "Tap on user to add as friend"; ObjectID = "pcl-kR-WSM"; */
+"pcl-kR-WSM.text" = "Tap on user to add as friend";
+
+/* Class = "UILabel"; text = "Steps"; ObjectID = "qRe-qJ-Z7I"; */
+"qRe-qJ-Z7I.text" = "Steps";
+
+/* Class = "UIButton"; normalTitle = "Change Profile Image"; ObjectID = "tSR-ow-Iv9"; */
+"tSR-ow-Iv9.normalTitle" = "Change Profile Image";
+
+/* Class = "UILabel"; text = "Locate"; ObjectID = "tpS-Pf-qSo"; */
+"tpS-Pf-qSo.text" = "Locate";
+
+/* Class = "UIButton"; normalTitle = "Next →"; ObjectID = "u1T-EV-tCK"; */
+"u1T-EV-tCK.normalTitle" = "Next →";
+
+/* Class = "UILabel"; text = "Sign in with Apple"; ObjectID = "uov-Zz-QAc"; */
+"uov-Zz-QAc.text" = "Sign in with Apple";
+
+/* Class = "UIButton"; normalTitle = "Reset"; ObjectID = "utl-gc-XHL"; */
+"utl-gc-XHL.normalTitle" = "Reset";
+
+/* Class = "UILabel"; text = "Steps"; ObjectID = "vfL-f2-QXr"; */
+"vfL-f2-QXr.text" = "Steps";
+
+/* Class = "UIButton"; normalTitle = "Back to Sign In"; ObjectID = "w4S-uQ-xpv"; */
+"w4S-uQ-xpv.normalTitle" = "Back to Sign In";
+
+/* Class = "UITextField"; placeholder = "Write Here"; ObjectID = "y2y-yR-MUZ"; */
+"y2y-yR-MUZ.placeholder" = "Write Here";
+
+/* Class = "UILabel"; text = "Start Now!"; ObjectID = "yME-QZ-o0A"; */
+"yME-QZ-o0A.text" = "Start Now!";

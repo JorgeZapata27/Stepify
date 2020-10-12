@@ -80,6 +80,12 @@
 		78418DE0252074520052125F /* Leaderboard User Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Leaderboard User Object.swift"; sourceTree = "<group>"; };
 		78418DE2252081160052125F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		78418DE425208E9C0052125F /* Leaderboard Friend Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Leaderboard Friend Object.swift"; sourceTree = "<group>"; };
+		7845235D2534653A00A051EF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		7845235E2534653A00A051EF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		7845235F2534654A00A051EF /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		784523602534654A00A051EF /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		784523612534655500A051EF /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Main.strings; sourceTree = "<group>"; };
+		784523622534655500A051EF /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		789C874C252AF7D80087D5F7 /* ErrorReportWriteReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorReportWriteReview.swift; sourceTree = "<group>"; };
 		78FC3CC82523B09C00AD6963 /* User Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User Profile.swift"; sourceTree = "<group>"; };
 		78FC3CCA25277F6B00AD6963 /* PresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
@@ -232,6 +238,9 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
+				es,
+				hi,
 			);
 			mainGroup = 78173729251BCB1B0062FFA2;
 			productRefGroup = 78173733251BCB1B0062FFA2 /* Products */;
@@ -363,6 +372,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				7817373C251BCB1B0062FFA2 /* Base */,
+				7845235D2534653A00A051EF /* de */,
+				7845235F2534654A00A051EF /* es */,
+				784523612534655500A051EF /* hi */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -371,6 +383,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				78173741251BCB240062FFA2 /* Base */,
+				7845235E2534653A00A051EF /* de */,
+				784523602534654A00A051EF /* es */,
+				784523622534655500A051EF /* hi */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -382,6 +397,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -442,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -499,7 +516,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Stepify/Stepify.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = ZH735L9VC9;
 				INFOPLIST_FILE = Stepify/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -507,7 +524,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "Jorge-Zapata.Stepify";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -522,7 +539,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Stepify/Stepify.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = ZH735L9VC9;
 				INFOPLIST_FILE = Stepify/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -530,7 +547,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "Jorge-Zapata.Stepify";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
