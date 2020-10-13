@@ -398,7 +398,7 @@
             <objects>
                 <viewController id="AjL-JZ-R7P" customClass="Add_Photo" customModule="Stepify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rGf-gx-Cdh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAA-fl-HSO">
@@ -677,12 +677,29 @@
                     <connections>
                         <segue destination="MqQ-pV-myO" kind="relationship" relationship="viewControllers" id="xgf-od-wSB"/>
                         <segue destination="wWV-H2-Rzs" kind="relationship" relationship="viewControllers" id="bXG-pF-BCd"/>
-                        <segue destination="uwC-R0-7Mt" kind="relationship" relationship="viewControllers" id="zgf-8C-W9I"/>
+                        <segue destination="zA0-hC-RRY" kind="relationship" relationship="viewControllers" id="Q8A-LC-pPp"/>
+                        <segue destination="uwC-R0-7Mt" kind="relationship" relationship="viewControllers" id="69x-No-4hD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gwO-lu-0jf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3586" y="2243"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="wgw-a5-wVh">
+            <objects>
+                <viewController id="zA0-hC-RRY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OKj-gN-mD9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="0fz-cL-gHu"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="xGM-ij-Xav"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="793-Tk-mGi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4641" y="2510"/>
         </scene>
         <!--Create Account-->
         <scene sceneID="B78-Aw-ehO">
@@ -1527,46 +1544,6 @@ your email address.</string>
             </objects>
             <point key="canvasLocation" x="51" y="3194"/>
         </scene>
-        <!--Map-->
-        <scene sceneID="3pK-9q-pQd">
-            <objects>
-                <viewController id="2Rz-zX-cOw" customClass="Map" customModule="Stepify" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zqb-w8-eCS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZYk-Zd-ZuO">
-                                <rect key="frame" x="157" y="398" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="5kF-3J-trH"/>
-                                    <constraint firstAttribute="width" constant="100" id="Zlo-PQ-LNb"/>
-                                </constraints>
-                            </imageView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsBuildings="NO" showsCompass="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D13-RJ-IZf">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
-                            </mapView>
-                        </subviews>
-                        <color key="backgroundColor" name="backgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="ZYk-Zd-ZuO" firstAttribute="centerY" secondItem="zqb-w8-eCS" secondAttribute="centerY" id="0BR-Sl-7ZA"/>
-                            <constraint firstItem="ZYk-Zd-ZuO" firstAttribute="centerX" secondItem="zqb-w8-eCS" secondAttribute="centerX" id="0I0-7N-fNC"/>
-                            <constraint firstItem="D13-RJ-IZf" firstAttribute="leading" secondItem="0wH-SO-PbP" secondAttribute="leading" id="IHO-FT-i8Q"/>
-                            <constraint firstItem="0wH-SO-PbP" firstAttribute="trailing" secondItem="D13-RJ-IZf" secondAttribute="trailing" id="WQi-i0-wub"/>
-                            <constraint firstItem="D13-RJ-IZf" firstAttribute="top" secondItem="zqb-w8-eCS" secondAttribute="top" id="jyw-mQ-DKf"/>
-                            <constraint firstItem="0wH-SO-PbP" firstAttribute="bottom" secondItem="D13-RJ-IZf" secondAttribute="bottom" id="rFV-Ga-AXV"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="0wH-SO-PbP"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" image="map" catalog="system" selectedImage="map.fill" id="i04-vb-XUk"/>
-                    <connections>
-                        <outlet property="imageViewofUser" destination="ZYk-Zd-ZuO" id="rPl-cT-8pz"/>
-                        <outlet property="mapView" destination="D13-RJ-IZf" id="sMX-Ba-LRw"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="izD-07-V0a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4641" y="2523"/>
-        </scene>
         <!--Settings-->
         <scene sceneID="h2k-hy-LV4">
             <objects>
@@ -1713,7 +1690,7 @@ your email address.</string>
             <objects>
                 <viewController id="cZ0-Qp-PEx" customClass="ErrorReportWriteReview" customModule="Stepify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZEz-ei-RH3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stepifyappicon" translatesAutoresizingMaskIntoConstraints="NO" id="Q2y-Ej-dax">
@@ -1776,7 +1753,7 @@ your email address.</string>
             <objects>
                 <viewController id="SiD-gL-YU7" customClass="User_Profile" customModule="Stepify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QZQ-UA-JgI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVV-C7-c3a">
@@ -1878,7 +1855,7 @@ your email address.</string>
             <objects>
                 <viewController id="C4O-hy-z4r" customClass="Notifications_Controller" customModule="Stepify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cFk-yE-GrS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKC-J3-ABe">
@@ -2205,7 +2182,7 @@ your email address.</string>
             <objects>
                 <viewController id="jvm-u7-EMc" customClass="FindFriends" customModule="Stepify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KgT-SQ-WcF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find Friends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftn-yb-lZ8">
@@ -2364,6 +2341,22 @@ your email address.</string>
             </objects>
             <point key="canvasLocation" x="6024.6376811594209" y="1834.8214285714284"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="lNG-Hc-9tM">
+            <objects>
+                <viewController id="g35-aF-bng" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Eg1-bO-omy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Uoz-3E-kHt"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="zcP-Pm-Aic"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGw-q5-gvb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5354" y="2510"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="vg3-NV-QB3"/>
@@ -2378,8 +2371,6 @@ your email address.</string>
         <image name="google" width="666.5" height="666.5"/>
         <image name="house" catalog="system" width="128" height="110"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="map" catalog="system" width="128" height="113"/>
-        <image name="map.fill" catalog="system" width="128" height="113"/>
         <image name="paperplane" catalog="system" width="128" height="121"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
