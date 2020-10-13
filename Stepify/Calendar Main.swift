@@ -23,18 +23,19 @@ class Calendar_Main: UIViewController, FSCalendarDelegate, FSCalendarDataSource 
     
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         let modifedDate = Calendar.current.date(byAdding: .day, value: 1, to: date)
-        print("date")
-        print(modifedDate!)
-        print("date")
         if modifedDate! < Date() {
             print("This is before")
-            // pass information
+            self.newDate = modifedDate!
+            self.performSegue(withIdentifier: "toCalendarPage2", sender: self)
         }
     }
     
+    var newDate = Date()
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toCalendarPage2" {
-            //
+            let secondController = segue.destination as! CalendarDayViewController
+            secondController.date = self.newDate
         }
     }
 
