@@ -212,8 +212,6 @@
 				7817372E251BCB1B0062FFA2 /* Sources */,
 				7817372F251BCB1B0062FFA2 /* Frameworks */,
 				78173730251BCB1B0062FFA2 /* Resources */,
-				B414D3CF77B094FC9B4956F1 /* [CP] Embed Pods Frameworks */,
-				DF39C6AA9BA7A1916EB278F2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -277,40 +275,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B414D3CF77B094FC9B4956F1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Stepify/Pods-Stepify-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Stepify/Pods-Stepify-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Stepify/Pods-Stepify-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DF39C6AA9BA7A1916EB278F2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Stepify/Pods-Stepify-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Stepify/Pods-Stepify-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Stepify/Pods-Stepify-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E95ECA8237F17D91A4B20409 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
