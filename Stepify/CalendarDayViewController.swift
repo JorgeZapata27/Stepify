@@ -19,9 +19,14 @@ class CalendarDayViewController: UIViewController {
     @IBOutlet weak var DistanceCounter: UILabel!
     @IBOutlet weak var FlightsClimbed: UILabel!
     
+    var date = Date()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         CurrentDate.layer.cornerRadius = CurrentDate.frame.height / 2.0
+        print("date")
+        print(self.date)
+        print("date")
         // Do any additional setup after loading the view.
     }
     
