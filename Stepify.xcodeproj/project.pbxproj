@@ -35,6 +35,7 @@
 		78418DE3252081160052125F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78418DE2252081160052125F /* Extensions.swift */; };
 		78418DE525208E9C0052125F /* Leaderboard Friend Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78418DE425208E9C0052125F /* Leaderboard Friend Object.swift */; };
 		789C874D252AF7D80087D5F7 /* ErrorReportWriteReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789C874C252AF7D80087D5F7 /* ErrorReportWriteReview.swift */; };
+		78CE512C2535A9D300806C70 /* Calendar Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE512B2535A9D300806C70 /* Calendar Main.swift */; };
 		78FC3CC92523B09C00AD6963 /* User Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC3CC82523B09C00AD6963 /* User Profile.swift */; };
 		78FC3CCB25277F6B00AD6963 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC3CCA25277F6B00AD6963 /* PresentationController.swift */; };
 		78FC3CCD2527A3FF00AD6963 /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78FC3CCC2527A3FF00AD6963 /* OverlayView.xib */; };
@@ -89,6 +90,7 @@
 		7891E06A253494EF0079E11F /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Main.strings"; sourceTree = "<group>"; };
 		7891E06B253494EF0079E11F /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		789C874C252AF7D80087D5F7 /* ErrorReportWriteReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorReportWriteReview.swift; sourceTree = "<group>"; };
+		78CE512B2535A9D300806C70 /* Calendar Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar Main.swift"; sourceTree = "<group>"; };
 		78FC3CC82523B09C00AD6963 /* User Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User Profile.swift"; sourceTree = "<group>"; };
 		78FC3CCA25277F6B00AD6963 /* PresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
 		78FC3CCC2527A3FF00AD6963 /* OverlayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverlayView.xib; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				78FC3CD62528AD2D00AD6963 /* Settings.swift */,
 				789C874C252AF7D80087D5F7 /* ErrorReportWriteReview.swift */,
 				781894A42531F19500CDB03A /* FindFriends.swift */,
+				78CE512B2535A9D300806C70 /* Calendar Main.swift */,
 				78FC3CCC2527A3FF00AD6963 /* OverlayView.xib */,
 				7817373B251BCB1B0062FFA2 /* Main.storyboard */,
 				7817373E251BCB240062FFA2 /* Assets.xcassets */,
@@ -347,6 +350,7 @@
 				78173764251F31B70062FFA2 /* Sign In Nav.swift in Sources */,
 				78173760251F2B420062FFA2 /* MainTabBarController.swift in Sources */,
 				78FC3CCF2527A57500AD6963 /* OverlayView.swift in Sources */,
+				78CE512C2535A9D300806C70 /* Calendar Main.swift in Sources */,
 				7817375C251F26F40062FFA2 /* Forgot Password.swift in Sources */,
 				78173766251F31C30062FFA2 /* Sign Up Nav.swift in Sources */,
 				7817374A251C6B500062FFA2 /* Onboarding1.swift in Sources */,
