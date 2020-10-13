@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import HealthKit
 import MBCircularProgressBar
 
 class CalendarDayViewController: UIViewController {
@@ -20,25 +21,121 @@ class CalendarDayViewController: UIViewController {
     @IBOutlet weak var FlightsClimbed: UILabel!
     
     var date = Date()
+    var steps = 0
+    var flights = 0
+    var distance = 0.0
+    var startDate = Date()
+    var endDate = Date()
+    
+    let healthKitStore: HKHealthStore = HKHealthStore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.startDate = Calendar.current.startOfDay(for: self.date)
+        self.endDate = Calendar.current.date(byAdding: .day, value: 1, to: self.date)!
+        
+//        functions to throw
+        self.pullSteps()
+        
         CurrentDate.layer.cornerRadius = CurrentDate.frame.height / 2.0
-        print("date")
-        print(self.date)
-        print("date")
         // Do any additional setup after loading the view.
     }
     
+    func pullSteps() {
+        guard let sampleType = HKCategoryType.quantityType(forIdentifier: .stepCount) else {
+             return
+        }
+        let predicate = HKQuery.predicateForSamples(withStart: self.startDate, end: self.endDate, options: .strictEndDate)
+        var interval = DateComponents()
+        interval.day = 1
+        let query = HKStatisticsCollectionQuery(quantityType: sampleType, quantitySamplePredicate: predicate, options: [.cumulativeSum], anchorDate: startDate, intervalComponents: interval)
+        query.initialResultsHandler = {
+            query, result, error in
+            
+            if let myResult = result {
+                myResult.enumerateStatistics(from: self.startDate, to: self.endDate) { (statistic, value) in
+                    if let count = statistic.sumQuantity() {
+                        let val = count.doubleValue(for: HKUnit.count())
+                        print("Total number of steps today: \(val)")
+                        self.steps = Int(val)
+                        print("STEPS")
+                        print(self.steps)
+                        print("STEPS")
+//                        self.pullFlights()
+                    } else {
+                        print("error1")
+                    }
+                }
+            } else {
+                print("error2")
+            }
+        }
+        healthKitStore.execute(query)
+    }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    func pullFlights() {
+        guard let sampleType = HKCategoryType.quantityType(forIdentifier: .flightsClimbed) else {
+             return
+        }
+        let predicate = HKQuery.predicateForSamples(withStart: self.startDate, end: self.endDate, options: .strictEndDate)
+        var interval = DateComponents()
+        interval.day = 1
+        let query = HKStatisticsCollectionQuery(quantityType: sampleType, quantitySamplePredicate: predicate, options: [.cumulativeSum], anchorDate: startDate, intervalComponents: interval)
+        query.initialResultsHandler = {
+            query, result, error in
+            
+            if let myResult = result {
+                myResult.enumerateStatistics(from: self.startDate, to: self.endDate) { (statistic, value) in
+                    if let count = statistic.sumQuantity() {
+                        let val = count.doubleValue(for: HKUnit.count())
+                        print("Total number of steps today: \(val)")
+                        self.flights = Int(val)
+                        self.pullDistance()
+                    } else {
+                        print("error1")
+                    }
+                }
+            } else {
+                print("error2")
+            }
+        }
+        healthKitStore.execute(query)
+    }
+    
+    func pullDistance() {
+        guard let sampleType = HKCategoryType.quantityType(forIdentifier: .distanceWalkingRunning) else {
+             return
+        }
+        let predicate = HKQuery.predicateForSamples(withStart: self.startDate, end: self.endDate, options: .strictEndDate)
+        var interval = DateComponents()
+        interval.day = 1
+        let query = HKStatisticsCollectionQuery(quantityType: sampleType, quantitySamplePredicate: predicate, options: [.cumulativeSum], anchorDate: startDate, intervalComponents: interval)
+        query.initialResultsHandler = {
+            query, result, error in
+            
+            if let myResult = result {
+                myResult.enumerateStatistics(from: self.startDate, to: self.endDate) { (statistic, value) in
+                    if let count = statistic.sumQuantity() {
+                        let val = count.doubleValue(for: HKUnit.count())
+                        print("Total number of steps today: \(val)")
+                        self.distance = val
+                        self.setData()
+                    } else {
+                        print("error1")
+                    }
+                }
+            } else {
+                print("error2")
+            }
+        }
+        healthKitStore.execute(query)
+    }
+    
+    func setData() {
+        print(self.distance)
+        print(self.flights)
+        print(self.steps)
+    }
     
 }
