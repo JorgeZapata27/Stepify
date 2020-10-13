@@ -268,3 +268,40 @@
 
 /* Class = "UILabel"; text = "Start Now!"; ObjectID = "yME-QZ-o0A"; */
 "yME-QZ-o0A.text" = "¡Empezar ahora!";
+
+/* Class = "UILabel"; text = "Flights Climbed"; ObjectID = "3nR-ob-JVl"; */
+"3nR-ob-JVl.text" = "Vuelos subidos";
+
+/* Class = "UILabel"; text = "Steps"; ObjectID = "4mE-dm-Dgw"; */
+"4mE-dm-Dgw.text" = "Pasos";
+
+/* Class = "UILabel"; text = "6.5"; ObjectID = "FuG-YI-slc"; */
+"FuG-YI-slc.text" = "6.5";
+
+/* Class = "UILabel"; text = "Steps"; ObjectID = "JxA-bh-W25"; */
+"JxA-bh-W25.text" = "Pasos";
+
+/* Class = "UILabel"; text = "9562"; ObjectID = "TuE-Ja-d5b"; */
+"TuE-Ja-d5b.text" = "9562";
+
+/* Class = "UILabel"; text = "of 10,000"; ObjectID = "U8S-Pg-hMl"; */
+"U8S-Pg-hMl.text" = "de 10,000";
+
+/* Class = "UILabel"; text = "10.0 mi"; ObjectID = "VMN-Wg-Ckp"; */
+"VMN-Wg-Ckp.text" = "10.0 millas";
+
+/* Class = "UILabel"; text = "Tap On Date For Info"; ObjectID = "fOC-8h-We0"; */
+"fOC-8h-We0.text" = "Toque Fecha para obtener información";
+
+/* Class = "UILabel"; text = "Distance"; ObjectID = "kAC-LL-t1D"; */
+"kAC-LL-t1D.text" = "Distancia";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "n98-ej-NvA"; */
+"n98-ej-NvA.text" = "Fecha";
+
+/* Class = "UILabel"; text = "Month"; ObjectID = "nmA-Ts-mfY"; */
+"nmA-Ts-mfY.text" = "Mes";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "zcP-Pm-Aic"; */
+"zcP-Pm-Aic.title" = "Articulo";
+
