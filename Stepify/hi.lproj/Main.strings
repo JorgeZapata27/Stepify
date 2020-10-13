@@ -269,3 +269,39 @@
 
 /* Class = "UILabel"; text = "Start Now!"; ObjectID = "yME-QZ-o0A"; */
 "yME-QZ-o0A.text" = "अभी शुरू करो!";
+
+/* Class = "UILabel"; text = "Flights Climbed"; ObjectID = "3nR-ob-JVl"; */
+"3nR-ob-JVl.text" = "Flights Climbed";
+
+/* Class = "UILabel"; text = "Steps"; ObjectID = "4mE-dm-Dgw"; */
+"4mE-dm-Dgw.text" = "कदम";
+
+/* Class = "UILabel"; text = "Steps"; ObjectID = "JxA-bh-W25"; */
+"JxA-bh-W25.text" = "कदम";
+
+/* Class = "UILabel"; text = "Calendar"; ObjectID = "T0t-S2-Qcd"; */
+"T0t-S2-Qcd.text" = "पंचांग";
+
+/* Class = "UILabel"; text = "9562"; ObjectID = "TuE-Ja-d5b"; */
+"TuE-Ja-d5b.text" = "9562";
+
+/* Class = "UILabel"; text = "of 10,000"; ObjectID = "U8S-Pg-hMl"; */
+"U8S-Pg-hMl.text" = "10,000 में से ";
+
+/* Class = "UILabel"; text = "10.0 mi"; ObjectID = "VMN-Wg-Ckp"; */
+"VMN-Wg-Ckp.text" = "10.0 मील";
+
+/* Class = "UILabel"; text = "Tap On Date For Info"; ObjectID = "fOC-8h-We0"; */
+"fOC-8h-We0.text" = "जानकारी के लिए दिनांक पर टैप करें";
+
+/* Class = "UILabel"; text = "Distance"; ObjectID = "kAC-LL-t1D"; */
+"kAC-LL-t1D.text" = "दूरी";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "n98-ej-NvA"; */
+"n98-ej-NvA.text" = "तारीख";
+
+/* Class = "UILabel"; text = "Month"; ObjectID = "nmA-Ts-mfY"; */
+"nmA-Ts-mfY.text" = "महीना";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "zcP-Pm-Aic"; */
+"zcP-Pm-Aic.title" = "मद";

@@ -1,0 +1,10 @@
+/* Bundle name */
+"CFBundleName" = "Stepify";
+/* Privacy - Health Share Usage Description */
+"NSHealthShareUsageDescription" = "Please let accept the usage of your daily step count so you can see your steps and compete with friends!";
+/* Privacy - Health Update Usage Description */
+"NSHealthUpdateUsageDescription" = "Please allow to read and write health data in order to access and update your steps!";
+/* Privacy - Location When In Use Usage Description */
+"NSLocationWhenInUseUsageDescription" = "Please allow location, so you and your friends can see where you are competing from!";
+/* Privacy - Photo Library Usage Description */
+"NSPhotoLibraryUsageDescription" = "Please allow so you can upload photos for your profile from your library!";
