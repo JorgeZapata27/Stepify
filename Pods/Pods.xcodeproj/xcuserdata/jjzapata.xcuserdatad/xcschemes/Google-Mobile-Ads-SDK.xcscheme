@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1B0DB648740FAB7B38AED9344B4A798D"
-               BuildableName = "Pods-Stepify.framework"
-               BlueprintName = "Pods-Stepify"
+               BlueprintIdentifier = "FEA3B3A570634836C0457F3D7CEF1699"
+               BuildableName = "Google-Mobile-Ads-SDK"
+               BlueprintName = "Google-Mobile-Ads-SDK"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

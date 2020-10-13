@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1B0DB648740FAB7B38AED9344B4A798D"
-               BuildableName = "Pods-Stepify.framework"
-               BlueprintName = "Pods-Stepify"
+               BlueprintIdentifier = "5C0371EE948D0357B8EE0E34ABB44BF0"
+               BuildableName = "GoogleDataTransport.framework"
+               BlueprintName = "GoogleDataTransport"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

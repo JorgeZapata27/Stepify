@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1B0DB648740FAB7B38AED9344B4A798D"
-               BuildableName = "Pods-Stepify.framework"
-               BlueprintName = "Pods-Stepify"
+               BlueprintIdentifier = "5C642AA10FB29936669CC269F42079C6"
+               BuildableName = "AppAuth.framework"
+               BlueprintName = "AppAuth"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1B0DB648740FAB7B38AED9344B4A798D"
-               BuildableName = "Pods-Stepify.framework"
-               BlueprintName = "Pods-Stepify"
+               BlueprintIdentifier = "AF8A82876C43F4DFD625D1823E680EAC"
+               BuildableName = "NVActivityIndicatorView.framework"
+               BlueprintName = "NVActivityIndicatorView"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
