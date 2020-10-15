@@ -83,15 +83,13 @@ class Sign_In: UIViewController, UITextFieldDelegate, ASAuthorizationControllerP
             if error != nil {
                 let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+                self.present(alert, animated: true)
             } else {
                 let sb = UIStoryboard(name: "Main", bundle: nil)
                 let vc: UIViewController = sb.instantiateViewController(withIdentifier: "TabBarMain") as! MainTabBarController
                 UIApplication.shared.keyWindow?.rootViewController = vc
             }
         }
-        let sb = UIStoryboard(name: "Main", bundle: nil)
-        let vc: UIViewController = sb.instantiateViewController(withIdentifier: "TabBarMain") as! MainTabBarController
-        UIApplication.shared.keyWindow?.rootViewController = vc
     }
     
     func ButtonsSetup() {
