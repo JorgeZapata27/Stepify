@@ -19,5 +19,7 @@ target 'Stepify' do
   pod 'STPopup'
   pod 'MBCircularProgressBar'
   pod 'Google-Mobile-Ads-SDK'
+  pod 'Kingfisher'
+  pod 'Nuke'
 
 end

@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseDatabase
+import Kingfisher
 import FirebaseAuth
 import MBProgressHUD
 import GoogleMobileAds
@@ -85,9 +86,14 @@ class Leaderboard: UIViewController, UITableViewDelegate, UITableViewDataSource,
                 Database.database().reference().child("Users").child(user.uid!).child("steps").observe(.value) { (snapshot) in
                     print("finding steps")
                     let value = snapshot.value as? NSNumber
-                    let integer = Int(value!)
-                    user.steps = integer
-                    self.importantNBool = true
+                    let notOptional = value
+                    if let integer = notOptional {
+                        user.steps = Int(integer)
+                        self.importantNBool = true
+                    } else {
+                        user.steps = Int(0)
+                        self.importantNBool = true
+                    }
                 }
                 self.searchFriends.append(user)
             }
@@ -122,7 +128,9 @@ class Leaderboard: UIViewController, UITableViewDelegate, UITableViewDataSource,
         if self.segmentedControl.selectedSegmentIndex == 0 {
             // all users
             let cell = tableView.dequeueReusableCell(withIdentifier: "leaderboardFriends", for: indexPath) as! Leaderboard_Cell
-            cell.profileImage.loadImageUsingCacheWithUrlString(self.allUsers[indexPath.row].profileImageUrl!)
+            let url = URL(string: self.allUsers[indexPath.row].profileImageUrl!)
+            cell.profileImage.kf.setImage(with: url)
+//            cell.profileImage.downloaded(from: url!)
             cell.titleName.text = self.allUsers[indexPath.row].name!
             cell.stepCount.text = String("\(self.allUsers[indexPath.row].steps!) Steps")
             cell.emojiButton.imageView?.translatesAutoresizingMaskIntoConstraints = false
@@ -135,25 +143,34 @@ class Leaderboard: UIViewController, UITableViewDelegate, UITableViewDataSource,
             let cell = tableView.dequeueReusableCell(withIdentifier: "leaderboardFriends", for: indexPath) as! Leaderboard_Cell
             cell.emojiButton.addTarget(self, action: #selector(openPopup), for: .touchUpInside)
             Database.database().reference().child("Users").child(self.searchFriends[indexPath.row].uid!).child("steps").observe(.value) { (steps) in
+                
+                
                 let value = steps.value as? NSNumber
-                let integer = Int(value!)
-                self.searchFriends.sort(by: { $1.steps! < $0.steps!})
-//                cell.stepCount!.text! = "\(integer) Steps"
-                Database.database().reference().child("Users").child(self.searchFriends[indexPath.row].uid!).child("firstname").observe(.value) { (firstname) in
-                    let firstname : String = (firstname.value as? String)!
-                    cell.titleName!.text! = firstname
-                    Database.database().reference().child("Users").child(self.searchFriends[indexPath.row].uid!).child("profilePhoto").observe(.value) { (photoURL) in
-                        let profilePhoto : String = (photoURL.value as? String)!
-                        cell.profileImage.loadImageUsingCacheWithUrlString(profilePhoto)
-                        Database.database().reference().child("Users").child(self.searchFriends[indexPath.row].uid!).child("email").observe(.value) { (email) in
-                            let emailOfUser : String = (email.value as? String)!
-                            cell.stepCount!.text! = emailOfUser
-
-                            Database.database().reference().child("Users").child(self.searchFriends[indexPath.row].uid!).child("steps").observe(.value) { (steps) in
-                                let stepVal = steps.value as? NSNumber
-                                let integer = Int(stepVal!)
-                                cell.stepCount!.text! = String("\(integer) Steps")
+                let notOptional = value
+                if let integer = notOptional {
+                    self.searchFriends.sort(by: { $1.steps! < $0.steps!})
+                    Database.database().reference().child("Users").child(self.searchFriends[indexPath.row].uid!).child("firstname").observe(.value) { (firstname) in
+                        if let firstname : String = (firstname.value as? String) {
+                            cell.titleName!.text! = firstname
+                            Database.database().reference().child("Users").child(self.searchFriends[indexPath.row].uid!).child("profilePhoto").observe(.value) { (photoURL) in
+                                if let profilePhoto : String = (photoURL.value as? String) {
+                                    cell.profileImage.loadImageUsingCacheWithUrlString(profilePhoto)
+                                    Database.database().reference().child("Users").child(self.searchFriends[indexPath.row].uid!).child("email").observe(.value) { (email) in
+                                        if let emailOfUser : String = (email.value as? String) {
+                                            cell.stepCount!.text! = emailOfUser
+                                            Database.database().reference().child("Users").child(self.searchFriends[indexPath.row].uid!).child("steps").observe(.value) { (steps) in
+                                                let value = steps.value as? NSNumber
+                                                let notOptional = value
+                                                if let integer = notOptional {
+                                                    cell.stepCount!.text! = String("\(integer) Steps")
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             }
+                        } else {
+                            cell.titleName!.text! = "Deleted user"
                         }
                     }
                 }
@@ -224,7 +241,7 @@ class Leaderboard: UIViewController, UITableViewDelegate, UITableViewDataSource,
             let secondController = segue.destination as! User_Profile
             
             Database.database().reference().child("Users").child(self.searchFriends[openIndex].uid!).child("profilePhoto").observe(.value) { (firstname) in
-                if let profilePhoto : String = (firstname.value as? String)! {
+                if let profilePhoto : String = (firstname.value as? String) {
                     secondController.imageURL = profilePhoto
                 } else {
                     secondController.imageURL = "https://www.google.com/url?q=https://is4-ssl.mzstatic.com/image/thumb/Purple124/v4/bc/5c/2f/bc5c2f80-f2d9-de4d-1fef-f2170e45a717/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/492x0w.png&source=gmail&ust=1602418896999000&usg=AFQjCNE2ygJQZOFtAx3kKhzRkhvy6aGezA"

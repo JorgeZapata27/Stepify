@@ -80,11 +80,14 @@ class Notifications_Controller: UIViewController, UITableViewDelegate, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "notifications", for: indexPath) as! Leaderboard_Cell
         let uid = notifications[indexPath.row].uid!
         Database.database().reference().child("Users").child(uid).child("firstname").observe(.value, with: { (data) in
-            let name : String = (data.value as? String)!
-            cell.titleName!.text! = "\(name) Reacted: \(self.notifications[indexPath.row].message!)"
+            if let name : String = (data.value as? String) {
+                cell.titleName!.text! = "\(name) Reacted: \(self.notifications[indexPath.row].message!)"
+            } else {
+                cell.titleName!.text! = "ERROR Reacted: \(self.notifications[indexPath.row].message!)"
+            }
         })
         Database.database().reference().child("Users").child(uid).child("profilePhoto").observe(.value, with: { (data) in
-            if let url : String = (data.value as? String)! {
+            if let url : String = (data.value as? String) {
                 cell.profileImage.loadImageUsingCacheWithUrlString(url)
             } else {
                 cell.profileImage.loadImageUsingCacheWithUrlString("https://www.google.com/url?q=https://is4-ssl.mzstatic.com/image/thumb/Purple124/v4/bc/5c/2f/bc5c2f80-f2d9-de4d-1fef-f2170e45a717/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/492x0w.png&source=gmail&ust=1602418896999000&usg=AFQjCNE2ygJQZOFtAx3kKhzRkhvy6aGezA")

@@ -98,6 +98,9 @@ PODS:
   - GTMSessionFetcher/Core (1.4.0)
   - GTMSessionFetcher/Full (1.4.0):
     - GTMSessionFetcher/Core (= 1.4.0)
+  - Kingfisher (5.15.8):
+    - Kingfisher/Core (= 5.15.8)
+  - Kingfisher/Core (5.15.8)
   - leveldb-library (1.22)
   - MBCircularProgressBar (0.3.5)
   - MBProgressHUD (1.2.0)
@@ -106,6 +109,7 @@ PODS:
     - nanopb/encode (= 1.30905.0)
   - nanopb/decode (1.30905.0)
   - nanopb/encode (1.30905.0)
+  - Nuke (9.2.3)
   - NVActivityIndicatorView (5.0.1):
     - NVActivityIndicatorView/Base (= 5.0.1)
   - NVActivityIndicatorView/Base (5.0.1)
@@ -122,8 +126,10 @@ DEPENDENCIES:
   - Firebase/Storage
   - Google-Mobile-Ads-SDK
   - GoogleSignIn
+  - Kingfisher
   - MBCircularProgressBar
   - MBProgressHUD
+  - Nuke
   - NVActivityIndicatorView
   - STPopup
   - SVProgressHUD
@@ -148,10 +154,12 @@ SPEC REPOS:
     - GoogleUtilities
     - GTMAppAuth
     - GTMSessionFetcher
+    - Kingfisher
     - leveldb-library
     - MBCircularProgressBar
     - MBProgressHUD
     - nanopb
+    - Nuke
     - NVActivityIndicatorView
     - PromisesObjC
     - STPopup
@@ -176,15 +184,17 @@ SPEC CHECKSUMS:
   GoogleUtilities: 7f2f5a07f888cdb145101d6042bc4422f57e70b3
   GTMAppAuth: 4deac854479704f348309e7b66189e604cf5e01e
   GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
+  Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   MBCircularProgressBar: 0b795b722a5eb5b0923822f90474e2576a1a7855
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
+  Nuke: 3dd19fd03612c179036d2af7f56ec57cb84144e2
   NVActivityIndicatorView: 738e843cb8924e9e4fc3e559d0728031624bf860
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
   STPopup: a9045557bc48a0df51fbb7bf0544447c5fe84d34
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: d85777f4530bfc86d7cea6dadbf7072b002abe1a
+PODFILE CHECKSUM: 3c6973e92e2216bcf2b8dfd5ee7efaa57a12ca24
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.0
