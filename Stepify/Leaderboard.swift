@@ -207,7 +207,7 @@ class Leaderboard: UIViewController, UITableViewDelegate, UITableViewDataSource,
         print("received")
     }
     
-    func adView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: GADRequestError) {
+    func bannerView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: Error) {
         print(error.localizedDescription)
     }
     
@@ -224,7 +224,7 @@ class Leaderboard: UIViewController, UITableViewDelegate, UITableViewDataSource,
             let secondController = segue.destination as! User_Profile
             
             Database.database().reference().child("Users").child(self.searchFriends[openIndex].uid!).child("profilePhoto").observe(.value) { (firstname) in
-                if let profilePhoto : String = (firstname.value as? String)! {
+                if let profilePhoto : String = (firstname.value as? String) {
                     secondController.imageURL = profilePhoto
                 } else {
                     secondController.imageURL = "https://www.google.com/url?q=https://is4-ssl.mzstatic.com/image/thumb/Purple124/v4/bc/5c/2f/bc5c2f80-f2d9-de4d-1fef-f2170e45a717/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/492x0w.png&source=gmail&ust=1602418896999000&usg=AFQjCNE2ygJQZOFtAx3kKhzRkhvy6aGezA"
