@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="llB-KX-VI9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="llB-KX-VI9">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,7 +27,7 @@
                                         <color key="textColor" name="themeColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1T-EV-tCK">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1T-EV-tCK">
                                         <rect key="frame" x="234" y="172" width="100" height="40"/>
                                         <color key="backgroundColor" name="secondaryColor"/>
                                         <constraints>
@@ -73,6 +75,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="QrN-0Z-Vc4"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstItem="ORP-A5-cPF" firstAttribute="centerY" secondItem="wCw-Hb-e8f" secondAttribute="centerY" constant="-115" id="JPY-7A-nxM"/>
@@ -85,7 +88,6 @@
                             <constraint firstItem="iqs-8x-39D" firstAttribute="leading" secondItem="QrN-0Z-Vc4" secondAttribute="leading" constant="50" id="gu1-yo-ybe"/>
                             <constraint firstItem="QrN-0Z-Vc4" firstAttribute="trailing" secondItem="ORP-A5-cPF" secondAttribute="trailing" id="oe4-Nn-CPH"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="QrN-0Z-Vc4"/>
                     </view>
                     <navigationItem key="navigationItem" id="rGR-Lm-kgm"/>
                     <connections>
@@ -135,7 +137,7 @@
                                             <constraint firstAttribute="trailing" secondItem="Fld-vG-Yap" secondAttribute="trailing" id="zTc-CQ-WwC"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whe-hf-1Xq">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whe-hf-1Xq">
                                         <rect key="frame" x="0.0" y="0.0" width="178" height="48"/>
                                         <connections>
                                             <action selector="appleButtonPressed:" destination="SRQ-6P-RqA" eventType="touchUpInside" id="OWc-r8-pK1"/>
@@ -191,7 +193,7 @@
                                             <constraint firstAttribute="height" constant="38" id="uAG-Aw-jEo"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1m-f3-wVv">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1m-f3-wVv">
                                         <rect key="frame" x="0.0" y="0.0" width="178" height="48"/>
                                         <connections>
                                             <action selector="googleButtonPressed:" destination="SRQ-6P-RqA" eventType="touchUpInside" id="khx-5m-wTZ"/>
@@ -303,7 +305,7 @@
                                     <constraint firstAttribute="height" constant="75" id="yuj-I1-VOe"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n77-FU-VpE">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n77-FU-VpE">
                                 <rect key="frame" x="20" y="326" width="374" height="48"/>
                                 <color key="backgroundColor" name="themeColor"/>
                                 <constraints>
@@ -317,7 +319,7 @@
                                     <action selector="mainButtonPressed:" destination="SRQ-6P-RqA" eventType="touchUpInside" id="pV4-AM-33p"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E56-m3-Ho2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E56-m3-Ho2">
                                 <rect key="frame" x="0.0" y="518" width="414" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Xk0-wN-c1N"/>
@@ -329,7 +331,7 @@
                                     <segue destination="Qa6-6f-O4B" kind="show" id="gJA-NK-WfB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUU-hm-My2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUU-hm-My2">
                                 <rect key="frame" x="285" y="289" width="109" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="PZD-mb-MqB"/>
@@ -344,6 +346,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="xgr-ya-7i0"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="QbR-Jd-LMC" secondAttribute="trailing" constant="20" id="042-Jz-GJk"/>
@@ -378,7 +381,6 @@
                             <constraint firstItem="QbR-Jd-LMC" firstAttribute="leading" secondItem="xgr-ya-7i0" secondAttribute="leading" constant="20" id="nci-Aq-v0M"/>
                             <constraint firstItem="xgr-ya-7i0" firstAttribute="trailing" secondItem="n77-FU-VpE" secondAttribute="trailing" constant="20" id="wte-us-Cc3"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="xgr-ya-7i0"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sign In" largeTitleDisplayMode="always" id="CLa-ZD-czG"/>
                     <connections>
@@ -396,10 +398,10 @@
             <objects>
                 <viewController id="AjL-JZ-R7P" customClass="Add_Photo" customModule="Stepify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rGf-gx-Cdh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAA-fl-HSO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAA-fl-HSO">
                                 <rect key="frame" x="20" y="534" width="374" height="48"/>
                                 <color key="backgroundColor" name="themeColor"/>
                                 <constraints>
@@ -440,7 +442,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvW-yU-dwq">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvW-yU-dwq">
                                 <rect key="frame" x="0.0" y="361" width="414" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="SY0-01-RTw"/>
@@ -462,6 +464,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="fAc-nV-HyP"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstItem="TAA-fl-HSO" firstAttribute="centerX" secondItem="rGf-gx-Cdh" secondAttribute="centerX" id="2O1-xN-6Bd"/>
@@ -479,7 +482,6 @@
                             <constraint firstItem="JaY-09-Sd1" firstAttribute="leading" secondItem="fAc-nV-HyP" secondAttribute="leading" id="tsL-Qh-eav"/>
                             <constraint firstItem="fAc-nV-HyP" firstAttribute="trailing" secondItem="TAA-fl-HSO" secondAttribute="trailing" constant="20" id="xSZ-4T-4Wr"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="fAc-nV-HyP"/>
                     </view>
                     <navigationItem key="navigationItem" id="Wpa-dp-2M9"/>
                     <connections>
@@ -588,7 +590,7 @@
                                     <constraint firstItem="9Wf-ME-wXe" firstAttribute="leading" secondItem="FdS-iG-F1Y" secondAttribute="leading" id="vDO-0m-Dfy"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIK-E7-nwn">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIK-E7-nwn">
                                 <rect key="frame" x="20" y="539" width="374" height="48"/>
                                 <color key="backgroundColor" name="themeColor"/>
                                 <constraints>
@@ -605,27 +607,14 @@
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bq8-Pe-dfr" customClass="GADBannerView">
                                 <rect key="frame" x="47" y="627" width="320" height="50"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="7gy-a5-mS1"/>
                                     <constraint firstAttribute="height" constant="50" id="EY5-O3-pSz"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyC-Oq-BCz">
-                                <rect key="frame" x="344" y="25" width="50" height="22"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="cFR-eO-gT2"/>
-                                </constraints>
-                                <color key="tintColor" name="primaryText"/>
-                                <state key="normal" image="paperplane" catalog="system">
-                                    <color key="titleColor" name="primaryText"/>
-                                </state>
-                                <connections>
-                                    <segue destination="C4O-hy-z4r" kind="show" id="p49-ue-XIQ"/>
-                                </connections>
-                            </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="KZj-1B-mNP"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstItem="FdS-iG-F1Y" firstAttribute="top" secondItem="D27-jV-Nfr" secondAttribute="bottom" constant="30" id="98r-eK-68N"/>
@@ -633,7 +622,6 @@
                             <constraint firstItem="FdS-iG-F1Y" firstAttribute="width" secondItem="JfV-ht-MDP" secondAttribute="width" multiplier="0.603865" id="Bbt-69-XKa"/>
                             <constraint firstItem="oIK-E7-nwn" firstAttribute="leading" secondItem="KZj-1B-mNP" secondAttribute="leading" constant="20" id="C8n-TQ-TU1"/>
                             <constraint firstItem="D27-jV-Nfr" firstAttribute="top" secondItem="VbL-TF-KMZ" secondAttribute="bottom" constant="11" id="HBX-WD-Svn"/>
-                            <constraint firstItem="nyC-Oq-BCz" firstAttribute="top" secondItem="KZj-1B-mNP" secondAttribute="top" constant="25" id="KN0-B6-NDQ"/>
                             <constraint firstItem="KZj-1B-mNP" firstAttribute="trailing" secondItem="VbL-TF-KMZ" secondAttribute="trailing" id="Maz-so-7Vb"/>
                             <constraint firstItem="VbL-TF-KMZ" firstAttribute="top" secondItem="KZj-1B-mNP" secondAttribute="top" constant="61" id="Oqi-ts-smi"/>
                             <constraint firstItem="KZj-1B-mNP" firstAttribute="trailing" secondItem="D27-jV-Nfr" secondAttribute="trailing" id="P2d-ij-DtS"/>
@@ -643,11 +631,9 @@
                             <constraint firstItem="D27-jV-Nfr" firstAttribute="leading" secondItem="JfV-ht-MDP" secondAttribute="leading" id="VeJ-w0-hbQ"/>
                             <constraint firstItem="VbL-TF-KMZ" firstAttribute="leading" secondItem="KZj-1B-mNP" secondAttribute="leading" id="aTm-PO-0fQ"/>
                             <constraint firstItem="FdS-iG-F1Y" firstAttribute="height" secondItem="JfV-ht-MDP" secondAttribute="height" multiplier="0.4" id="bNY-qm-Doj"/>
-                            <constraint firstItem="KZj-1B-mNP" firstAttribute="trailing" secondItem="nyC-Oq-BCz" secondAttribute="trailing" constant="20" id="hH0-L0-eo6"/>
                             <constraint firstItem="KZj-1B-mNP" firstAttribute="bottom" secondItem="bq8-Pe-dfr" secondAttribute="bottom" constant="10" id="pPA-4Q-jb4"/>
                             <constraint firstItem="FdS-iG-F1Y" firstAttribute="centerX" secondItem="JfV-ht-MDP" secondAttribute="centerX" id="qJr-ID-EYI"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="KZj-1B-mNP"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="house" catalog="system" selectedImage="house.fill" id="RMU-4R-BuD"/>
                     <connections>
@@ -674,8 +660,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="MqQ-pV-myO" kind="relationship" relationship="viewControllers" id="xgf-od-wSB"/>
-                        <segue destination="wWV-H2-Rzs" kind="relationship" relationship="viewControllers" id="bXG-pF-BCd"/>
-                        <segue destination="zA0-hC-RRY" kind="relationship" relationship="viewControllers" id="Q8A-LC-pPp"/>
                         <segue destination="uwC-R0-7Mt" kind="relationship" relationship="viewControllers" id="69x-No-4hD"/>
                     </connections>
                 </tabBarController>
@@ -710,7 +694,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zvx-PS-NJX" customClass="FSCalendar">
-                                <rect key="frame" x="30" y="158" width="354" height="509"/>
+                                <rect key="frame" x="30" y="158" width="354" height="558"/>
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="firstWeekday">
@@ -726,16 +710,16 @@
                                         <real key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="weekdayTextColor">
-                                        <color key="value" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="value" systemColor="labelColor"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="headerTitleColor">
                                         <color key="value" name="primaryColor"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="titleDefaultColor">
-                                        <color key="value" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="value" systemColor="labelColor"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="titleSelectionColor">
-                                        <color key="value" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="value" systemColor="labelColor"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="titleTodayColor">
                                         <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -756,6 +740,7 @@
                                 </connections>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="0fz-cL-gHu"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="T0t-S2-Qcd" secondAttribute="trailing" id="0TX-ag-c5K"/>
@@ -769,7 +754,6 @@
                             <constraint firstItem="zvx-PS-NJX" firstAttribute="top" secondItem="fOC-8h-We0" secondAttribute="bottom" constant="20" id="dt8-hI-Eg2"/>
                             <constraint firstItem="0fz-cL-gHu" firstAttribute="bottom" secondItem="zvx-PS-NJX" secondAttribute="bottom" constant="20" id="hwP-jF-V1m"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="0fz-cL-gHu"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="calendar" catalog="system" selectedImage="calendar" id="xGM-ij-Xav"/>
                     <connections>
@@ -822,7 +806,7 @@
                                             <constraint firstAttribute="bottom" secondItem="kDI-Cd-Liv" secondAttribute="bottom" constant="8" id="is4-h5-JDK"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrZ-yY-rB4">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrZ-yY-rB4">
                                         <rect key="frame" x="0.0" y="0.0" width="178" height="48"/>
                                         <connections>
                                             <action selector="appleButtonPressed:" destination="Qa6-6f-O4B" eventType="touchUpInside" id="PGr-TT-Oa3"/>
@@ -878,7 +862,7 @@
                                             <constraint firstAttribute="height" constant="38" id="tgq-bQ-X0L"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bh1-Tp-JC3">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bh1-Tp-JC3">
                                         <rect key="frame" x="0.0" y="0.0" width="178" height="48"/>
                                         <connections>
                                             <action selector="googleButtonPressed:" destination="Qa6-6f-O4B" eventType="touchUpInside" id="GbE-7V-hON"/>
@@ -1022,7 +1006,7 @@
                                     <constraint firstItem="jwe-Ng-CEV" firstAttribute="top" secondItem="AnB-gb-0z4" secondAttribute="top" id="zQn-Jq-6FH"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJm-Ah-JPS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJm-Ah-JPS">
                                 <rect key="frame" x="20" y="460" width="374" height="48"/>
                                 <color key="backgroundColor" name="themeColor"/>
                                 <constraints>
@@ -1036,7 +1020,7 @@
                                     <action selector="mainButtonPressed:" destination="Qa6-6f-O4B" eventType="touchUpInside" id="64W-Dv-RIV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5K-2n-6a6">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5K-2n-6a6">
                                 <rect key="frame" x="0.0" y="528" width="414" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="daM-dY-uKB"/>
@@ -1060,7 +1044,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MRF-zK-gOF">
                                 <rect key="frame" x="0.0" y="601" width="414" height="25"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yca-Ce-xca">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yca-Ce-xca">
                                         <rect key="frame" x="214.66666666666666" y="0.0" width="43.999999999999972" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="SBU-Iy-Uos"/>
@@ -1079,7 +1063,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iL6-Vs-zTm">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iL6-Vs-zTm">
                                         <rect key="frame" x="154.66666666666666" y="0.0" width="35" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="nFf-vl-324"/>
@@ -1101,6 +1085,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jlv-Fu-WYz"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstItem="Jlv-Fu-WYz" firstAttribute="trailing" secondItem="MRF-zK-gOF" secondAttribute="trailing" id="1I1-nd-dtO"/>
@@ -1140,7 +1125,6 @@
                             <constraint firstItem="Jlv-Fu-WYz" firstAttribute="trailing" secondItem="qkU-jW-aN8" secondAttribute="trailing" constant="20" id="vxd-2O-Dzt"/>
                             <constraint firstItem="aYV-Gb-Bqi" firstAttribute="width" secondItem="Ckl-t4-T1f" secondAttribute="width" multiplier="0.35" id="yrJ-Ha-ByB"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Jlv-Fu-WYz"/>
                     </view>
                     <navigationItem key="navigationItem" title="Create Account" largeTitleDisplayMode="always" id="B1j-Wt-W7H"/>
                     <connections>
@@ -1213,7 +1197,7 @@
                                     <constraint firstItem="m3v-hS-bjq" firstAttribute="top" secondItem="UeW-Kk-trp" secondAttribute="top" constant="25" id="yZa-9w-wLe"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8T-r1-Ptn">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8T-r1-Ptn">
                                 <rect key="frame" x="30" y="648" width="354" height="48"/>
                                 <color key="backgroundColor" name="themeColor"/>
                                 <constraints>
@@ -1232,7 +1216,7 @@
                                     <action selector="signUpButtonPressed:" destination="6Sf-uM-ZYD" eventType="touchUpInside" id="t7z-fW-FiV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lse-kp-9oI">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lse-kp-9oI">
                                 <rect key="frame" x="30" y="592" width="354" height="48"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -1247,6 +1231,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="dVO-lK-JXj"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstItem="c8T-r1-Ptn" firstAttribute="top" secondItem="lse-kp-9oI" secondAttribute="bottom" constant="8" id="96N-Yp-tfI"/>
@@ -1265,7 +1250,6 @@
                             <constraint firstItem="UeW-Kk-trp" firstAttribute="bottom" secondItem="dVO-lK-JXj" secondAttribute="bottom" id="pwG-rA-uOS"/>
                             <constraint firstItem="Pky-Uq-t9q" firstAttribute="centerY" secondItem="opJ-eD-9tl" secondAttribute="centerY" constant="-115" id="yZH-9h-Ed1"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="dVO-lK-JXj"/>
                     </view>
                     <navigationItem key="navigationItem" id="CD5-hF-xYj"/>
                     <connections>
@@ -1293,7 +1277,7 @@
                                         <color key="textColor" name="themeColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5iN-eo-tZF">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5iN-eo-tZF">
                                         <rect key="frame" x="234" y="162" width="100" height="40"/>
                                         <color key="backgroundColor" name="secondaryColor"/>
                                         <constraints>
@@ -1341,6 +1325,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="wtR-46-Vag"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstItem="tpS-Pf-qSo" firstAttribute="height" secondItem="MOT-oF-b3g" secondAttribute="height" multiplier="0.17" id="8wi-mU-YQw"/>
@@ -1353,7 +1338,6 @@
                             <constraint firstItem="mvF-yX-Phs" firstAttribute="top" secondItem="ZMP-j5-hb7" secondAttribute="bottom" constant="8" id="n0i-a9-4bh"/>
                             <constraint firstItem="ZMP-j5-hb7" firstAttribute="height" secondItem="MOT-oF-b3g" secondAttribute="height" multiplier="0.25" id="zhL-ZR-EhY"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="wtR-46-Vag"/>
                     </view>
                     <navigationItem key="navigationItem" id="cdg-eK-ZnF"/>
                     <connections>
@@ -1456,7 +1440,7 @@ your email address.</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4S-uQ-xpv">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4S-uQ-xpv">
                                 <rect key="frame" x="20" y="495" width="374" height="48"/>
                                 <color key="backgroundColor" name="themeColor"/>
                                 <constraints>
@@ -1473,6 +1457,7 @@ your email address.</string>
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="iEP-Ee-dSB"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstItem="D8I-Ns-APp" firstAttribute="centerX" secondItem="ONf-fe-Y5h" secondAttribute="centerX" id="5ni-a6-jzL"/>
@@ -1486,7 +1471,6 @@ your email address.</string>
                             <constraint firstItem="a3O-cB-MLo" firstAttribute="top" secondItem="iEP-Ee-dSB" secondAttribute="top" constant="85" id="oEf-Xn-lHh"/>
                             <constraint firstItem="imW-qQ-Sru" firstAttribute="centerX" secondItem="ONf-fe-Y5h" secondAttribute="centerX" id="s2V-nR-0OB"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="iEP-Ee-dSB"/>
                     </view>
                     <navigationItem key="navigationItem" id="sgI-aS-XrU"/>
                     <connections>
@@ -1505,7 +1489,7 @@ your email address.</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utl-gc-XHL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utl-gc-XHL">
                                 <rect key="frame" x="20" y="469" width="374" height="48"/>
                                 <color key="backgroundColor" name="themeColor"/>
                                 <constraints>
@@ -1588,13 +1572,14 @@ your email address.</string>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDd-gA-z0w" customClass="GADBannerView">
                                 <rect key="frame" x="47" y="686" width="320" height="50"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="1tl-aD-O6w"/>
                                     <constraint firstAttribute="width" constant="320" id="PsF-Vs-nHO"/>
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="XQv-v8-SGG"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstItem="uiL-9v-Bcu" firstAttribute="centerY" secondItem="8ja-aW-YJj" secondAttribute="centerY" constant="-75" id="3Dh-dt-R5v"/>
@@ -1612,7 +1597,6 @@ your email address.</string>
                             <constraint firstItem="XQv-v8-SGG" firstAttribute="bottom" secondItem="PDd-gA-z0w" secondAttribute="bottom" id="rnF-ue-lhI"/>
                             <constraint firstItem="Odg-6G-6Jc" firstAttribute="top" secondItem="XQv-v8-SGG" secondAttribute="top" constant="85" id="ye8-Cn-8vz"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="XQv-v8-SGG"/>
                     </view>
                     <navigationItem key="navigationItem" id="lma-fo-kb4"/>
                     <connections>
@@ -1663,7 +1647,7 @@ your email address.</string>
                                 <color key="textColor" name="themeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSR-ow-Iv9">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSR-ow-Iv9">
                                 <rect key="frame" x="33" y="183" width="147" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="1zt-bd-Srx"/>
@@ -1676,7 +1660,7 @@ your email address.</string>
                                     <action selector="performSegue" destination="uwC-R0-7Mt" eventType="touchUpInside" id="VQx-6J-n5Z"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WI5-tc-pTR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WI5-tc-pTR">
                                 <rect key="frame" x="33" y="222" width="130" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="lse-qM-AOM"/>
@@ -1689,7 +1673,7 @@ your email address.</string>
                                     <action selector="deleteAccount:" destination="uwC-R0-7Mt" eventType="touchUpInside" id="eft-7H-auM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Urm-Z8-GOG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Urm-Z8-GOG">
                                 <rect key="frame" x="33" y="310" width="54" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="A5H-dL-Nh9"/>
@@ -1700,7 +1684,7 @@ your email address.</string>
                                     <action selector="requestRating:" destination="uwC-R0-7Mt" eventType="touchUpInside" id="RvZ-FY-fK5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ep7-Mz-HCL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ep7-Mz-HCL">
                                 <rect key="frame" x="33" y="388" width="48" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="mBO-Sg-adb"/>
@@ -1711,7 +1695,7 @@ your email address.</string>
                                     <action selector="logout:" destination="uwC-R0-7Mt" eventType="touchUpInside" id="j39-Ws-gf2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYF-vJ-zKR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYF-vJ-zKR">
                                 <rect key="frame" x="33" y="349" width="92" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="NYi-4w-oAf"/>
@@ -1724,7 +1708,7 @@ your email address.</string>
                                     <action selector="shareStepify:" destination="uwC-R0-7Mt" eventType="touchUpInside" id="Idk-R9-Xa7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8c-lE-FHn">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8c-lE-FHn">
                                 <rect key="frame" x="0.0" y="637" width="414" height="30"/>
                                 <color key="tintColor" name="primaryText"/>
                                 <state key="normal" title="Requesting A Feature / Error Reporting?"/>
@@ -1733,6 +1717,7 @@ your email address.</string>
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Trg-Tu-UhQ"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstItem="Trg-Tu-UhQ" firstAttribute="trailing" secondItem="N3z-FC-frr" secondAttribute="trailing" id="0uQ-7l-r31"/>
@@ -1756,9 +1741,8 @@ your email address.</string>
                             <constraint firstItem="Trg-Tu-UhQ" firstAttribute="bottom" secondItem="N8c-lE-FHn" secondAttribute="bottom" constant="20" id="mFq-OP-zjE"/>
                             <constraint firstItem="UYF-vJ-zKR" firstAttribute="leading" secondItem="Trg-Tu-UhQ" secondAttribute="leading" constant="33" id="twE-Dz-F2M"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Trg-Tu-UhQ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="circle.grid.2x2" catalog="system" selectedImage="circle.grid.2x2.fill" id="6Z4-11-mTf"/>
+                    <tabBarItem key="tabBarItem" title="" image="gearshape" catalog="system" selectedImage="gearshape.fill" id="6Z4-11-mTf"/>
                     <connections>
                         <segue destination="AjL-JZ-R7P" kind="show" identifier="toPhotoChoosing" id="D7B-4u-ijA"/>
                     </connections>
@@ -1772,7 +1756,7 @@ your email address.</string>
             <objects>
                 <viewController id="cZ0-Qp-PEx" customClass="ErrorReportWriteReview" customModule="Stepify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZEz-ei-RH3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stepifyappicon" translatesAutoresizingMaskIntoConstraints="NO" id="Q2y-Ej-dax">
@@ -1788,7 +1772,7 @@ your email address.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bj9-CR-1UD">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bj9-CR-1UD">
                                 <rect key="frame" x="147" y="224" width="120" height="40"/>
                                 <color key="backgroundColor" name="themeColor"/>
                                 <constraints>
@@ -1809,6 +1793,7 @@ your email address.</string>
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="ted-kM-tYo"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstItem="ted-kM-tYo" firstAttribute="trailing" secondItem="Kbx-hw-5ZI" secondAttribute="trailing" constant="30" id="2rd-nf-XlK"/>
@@ -1819,7 +1804,6 @@ your email address.</string>
                             <constraint firstItem="Q2y-Ej-dax" firstAttribute="centerX" secondItem="ZEz-ei-RH3" secondAttribute="centerX" id="S6l-A8-b8k"/>
                             <constraint firstItem="Kbx-hw-5ZI" firstAttribute="top" secondItem="Q2y-Ej-dax" secondAttribute="bottom" constant="20" id="aZw-YI-Gaa"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ted-kM-tYo"/>
                     </view>
                     <navigationItem key="navigationItem" id="b6V-XM-7m9"/>
                     <connections>
@@ -1875,13 +1859,13 @@ your email address.</string>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uEa-Ty-Jz3" customClass="GADBannerView">
                                 <rect key="frame" x="47" y="661" width="320" height="50"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="3Dc-BH-kXG"/>
                                     <constraint firstAttribute="height" constant="50" id="Qjm-1e-qKL"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTz-B0-3Bu">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTz-B0-3Bu">
                                 <rect key="frame" x="20" y="586" width="374" height="48"/>
                                 <color key="backgroundColor" name="themeColor"/>
                                 <constraints>
@@ -1896,6 +1880,7 @@ your email address.</string>
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="tgq-Y4-X2i"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstItem="DSw-Co-k9T" firstAttribute="centerX" secondItem="QZQ-UA-JgI" secondAttribute="centerX" id="5jB-be-TVi"/>
@@ -1915,7 +1900,6 @@ your email address.</string>
                             <constraint firstItem="qRe-qJ-Z7I" firstAttribute="top" secondItem="dq9-dl-OW1" secondAttribute="bottom" constant="50" id="wxM-TK-JKB"/>
                             <constraint firstItem="dq9-dl-OW1" firstAttribute="top" secondItem="RVV-C7-c3a" secondAttribute="bottom" constant="11" id="z7Y-eb-irA"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="tgq-Y4-X2i"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="person" catalog="system" selectedImage="person.fill" id="joe-Tj-8JI"/>
                     <navigationItem key="navigationItem" id="MQ1-gJ-XRL"/>
@@ -1937,7 +1921,7 @@ your email address.</string>
             <objects>
                 <viewController id="C4O-hy-z4r" customClass="Notifications_Controller" customModule="Stepify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cFk-yE-GrS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKC-J3-ABe">
@@ -1959,7 +1943,7 @@ your email address.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="npx-LF-ual">
-                                <rect key="frame" x="0.0" y="168" width="414" height="488"/>
+                                <rect key="frame" x="0.0" y="168" width="414" height="508"/>
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="notifications" rowHeight="76" id="IGi-fz-Tq9" customClass="Leaderboard_Cell" customModule="Stepify" customModuleProvider="target">
@@ -2015,15 +1999,15 @@ your email address.</string>
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ssZ-K0-irE" customClass="GADBannerView">
-                                <rect key="frame" x="47" y="661" width="320" height="50"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="47" y="681" width="320" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="KgB-9D-YoP"/>
                                     <constraint firstAttribute="width" constant="320" id="U91-eb-XKp"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFg-5N-YnC">
-                                <rect key="frame" x="273" y="589" width="125" height="55"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFg-5N-YnC">
+                                <rect key="frame" x="273" y="609" width="125" height="55"/>
                                 <color key="backgroundColor" name="themeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="H4L-Sg-zi0"/>
@@ -2044,6 +2028,7 @@ your email address.</string>
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="2gN-Um-KO0"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="OZc-iz-MKY" secondAttribute="trailing" id="0tJ-p2-U3I"/>
@@ -2061,7 +2046,6 @@ your email address.</string>
                             <constraint firstItem="2gN-Um-KO0" firstAttribute="bottom" secondItem="ssZ-K0-irE" secondAttribute="bottom" constant="5" id="yDS-H0-Qte"/>
                             <constraint firstItem="ssZ-K0-irE" firstAttribute="top" secondItem="npx-LF-ual" secondAttribute="bottom" constant="5" id="zVr-I0-Lx8"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="2gN-Um-KO0"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="person" catalog="system" selectedImage="person.fill" id="qVv-Ck-GT8"/>
                     <navigationItem key="navigationItem" id="mSi-cj-HUU"/>
@@ -2112,7 +2096,7 @@ your email address.</string>
                                 </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nVx-yZ-3N3">
-                                <rect key="frame" x="0.0" y="220" width="414" height="407"/>
+                                <rect key="frame" x="0.0" y="220" width="414" height="456"/>
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="leaderboardFriends" rowHeight="76" id="3iJ-BG-0TI" customClass="Leaderboard_Cell" customModule="Stepify" customModuleProvider="target">
@@ -2193,8 +2177,8 @@ your email address.</string>
                                     <outlet property="delegate" destination="wWV-H2-Rzs" id="0Xf-nr-98r"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMr-Jx-Zlc">
-                                <rect key="frame" x="343" y="560" width="55" height="55"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMr-Jx-Zlc">
+                                <rect key="frame" x="343" y="609" width="55" height="55"/>
                                 <color key="backgroundColor" name="themeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="NL1-Df-1mm"/>
@@ -2216,14 +2200,15 @@ your email address.</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RcR-GD-PAi" customClass="GADBannerView">
-                                <rect key="frame" x="47" y="632" width="320" height="50"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="47" y="681" width="320" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="NpY-q0-1qP"/>
                                     <constraint firstAttribute="height" constant="50" id="awt-jI-6cO"/>
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="aHp-no-2zq"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstItem="RcR-GD-PAi" firstAttribute="top" secondItem="nVx-yZ-3N3" secondAttribute="bottom" constant="5" id="0Ia-bH-p7r"/>
@@ -2244,7 +2229,6 @@ your email address.</string>
                             <constraint firstItem="53Y-Wz-YVx" firstAttribute="top" secondItem="aHp-no-2zq" secondAttribute="top" constant="61" id="vYq-jk-OeB"/>
                             <constraint firstAttribute="trailing" secondItem="53Y-Wz-YVx" secondAttribute="trailing" id="xqv-YF-xEK"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="aHp-no-2zq"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="person" catalog="system" selectedImage="person.fill" id="N8v-iQ-c8v"/>
                     <connections>
@@ -2355,7 +2339,7 @@ your email address.</string>
                                     <outlet property="delegate" destination="jvm-u7-EMc" id="YB0-DF-lkE"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PF-Gg-YiC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PF-Gg-YiC">
                                 <rect key="frame" x="273" y="644" width="125" height="55"/>
                                 <color key="backgroundColor" name="themeColor"/>
                                 <constraints>
@@ -2392,6 +2376,7 @@ your email address.</string>
                                 </connections>
                             </searchBar>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="JL6-ag-hQV"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstItem="1o8-m3-LHX" firstAttribute="leading" secondItem="JL6-ag-hQV" secondAttribute="leading" id="7Le-wn-Y1y"/>
@@ -2410,7 +2395,6 @@ your email address.</string>
                             <constraint firstItem="Odq-Vf-Air" firstAttribute="top" secondItem="1o8-m3-LHX" secondAttribute="bottom" constant="9" id="lgk-d9-69C"/>
                             <constraint firstAttribute="trailing" secondItem="ftn-yb-lZ8" secondAttribute="trailing" id="qAc-wh-fbZ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="JL6-ag-hQV"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="person" catalog="system" selectedImage="person.fill" id="FEt-kW-vZw"/>
                     <navigationItem key="navigationItem" id="MGS-F0-IXh"/>
@@ -2530,13 +2514,13 @@ your email address.</string>
                                         <rect key="frame" x="0.0" y="0.0" width="234" height="69"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mE-dm-Dgw">
-                                                <rect key="frame" x="0.0" y="0.0" width="68" height="30.666666666666668"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="67.666666666666671" height="30.666666666666668"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9562" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TuE-Ja-d5b">
-                                                <rect key="frame" x="0.0" y="38.666666666666686" width="48.666666666666664" height="30.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="38.666666666666686" width="47.666666666666664" height="30.333333333333329"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -2564,13 +2548,13 @@ your email address.</string>
                                         <rect key="frame" x="0.0" y="178" width="234" height="69"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flights Climbed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nR-ob-JVl">
-                                                <rect key="frame" x="0.0" y="0.0" width="182.66666666666666" height="30.666666666666668"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="181.66666666666666" height="30.666666666666668"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FuG-YI-slc">
-                                                <rect key="frame" x="0.0" y="38.666666666666629" width="30.333333333333332" height="30.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="38.666666666666629" width="28.333333333333332" height="30.333333333333329"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -2588,6 +2572,7 @@ your email address.</string>
                                 </constraints>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Uoz-3E-kHt"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstItem="YyT-cK-EOa" firstAttribute="top" secondItem="Uoz-3E-kHt" secondAttribute="top" constant="20" id="5qo-zC-oSP"/>
@@ -2600,7 +2585,6 @@ your email address.</string>
                             <constraint firstItem="Uoz-3E-kHt" firstAttribute="trailing" secondItem="YyT-cK-EOa" secondAttribute="trailing" constant="120" id="kKM-ha-Vuw"/>
                             <constraint firstItem="Tvh-7o-874" firstAttribute="top" secondItem="SMb-vY-fmc" secondAttribute="bottom" constant="20" id="yXl-Hx-PYK"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Uoz-3E-kHt"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="zcP-Pm-Aic"/>
                     <navigationItem key="navigationItem" id="1Db-Pr-Ifz"/>
@@ -2628,12 +2612,11 @@ your email address.</string>
     <resources>
         <image name="apple" width="666.66668701171875" height="791.33331298828125"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
-        <image name="circle.grid.2x2" catalog="system" width="128" height="112"/>
-        <image name="circle.grid.2x2.fill" catalog="system" width="128" height="112"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="121"/>
         <image name="google" width="666.66668701171875" height="666.66668701171875"/>
-        <image name="house" catalog="system" width="128" height="110"/>
+        <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="paperplane" catalog="system" width="128" height="121"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
@@ -2658,5 +2641,14 @@ your email address.</string>
         <namedColor name="themeColor">
             <color red="0.99599999189376831" green="0.89800000190734863" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
