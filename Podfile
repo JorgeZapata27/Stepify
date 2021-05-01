@@ -6,19 +6,33 @@ target 'Stepify' do
   use_frameworks!
 
   # Pods for Stepify
-  pod 'Firebase/Analytics'
-  pod 'Firebase/Core'
-  pod 'Firebase/Auth'
-  pod 'Firebase/Database'
-  pod 'Firebase/Storage'
-  pod 'SVProgressHUD'
-  pod 'MBProgressHUD'
-  pod 'NVActivityIndicatorView'
-  pod 'GoogleSignIn'
-  pod 'BulletinBoard'
-  pod 'STPopup'
-  pod 'MBCircularProgressBar'
-  pod 'Google-Mobile-Ads-SDK'
-  pod 'FSCalendar'
 
+  pod 'Firebase/Analytics'
+  
+  pod 'Firebase/Core'
+  
+  pod 'Firebase/Auth'
+  
+  pod 'Firebase/Database'
+  
+  pod 'Firebase/Storage'
+  
+  pod 'SVProgressHUD'
+  
+  pod 'MBProgressHUD'
+  
+  pod 'NVActivityIndicatorView'
+  
+  pod 'GoogleSignIn'
+  
+  pod 'BulletinBoard'
+  
+  pod 'STPopup'
+  
+  pod 'MBCircularProgressBar'
+  
+  pod 'Google-Mobile-Ads-SDK'
+  
+  pod 'FSCalendar'
+  
 end
